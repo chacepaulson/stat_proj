@@ -1,0 +1,436 @@
+district_raw,state_full,state_abrev,district_num,region,dem,dem_id,dem_per,gop,gop_id,gop_edit,hold_flip,winner,win_id,win_per,loser,lose_id,lose_per,delta
+Alabama District 1,Alabama,AL,1,south,Kennedy,H8AL01066,36.8,Byrne,H4AL01123,63.2,GOP Hold,Byrne,H4AL01123,63.2,Kennedy,H8AL01066,36.8,26.4
+Alabama District 2,Alabama,AL,2,south,Isner,H8AL02197,38.5,Roby,H0AL02087,61.5,GOP Hold,Roby,H0AL02087,61.5,Isner,H8AL02197,38.5,23
+Alabama District 3,Alabama,AL,3,south,Hagan,H8AL03054,36.2,Rogers,H2AL03032,63.8,GOP Hold,Rogers,H2AL03032,63.8,Hagan,H8AL03054,36.2,27.6
+Alabama District 4,Alabama,AL,4,south,Auman,H8AL04094,20.1,Aderholt,H6AL04098,79.9,GOP Hold,Aderholt,H6AL04098,79.9,Auman,H8AL04094,20.1,59.8
+Alabama District 5,Alabama,AL,5,south,Joffrion,H8AL05190,38.9,Brooks,H0AL05163,61.1,GOP Hold,Brooks,H0AL05163,61.1,Joffrion,H8AL05190,38.9,22.2
+Alabama District 6,Alabama,AL,6,south,Kline,H8AL06099,30.8,Palmer,H4AL06098,69.2,GOP Hold,Palmer,H4AL06098,69.2,Kline,H8AL06099,30.8,38.4
+Alabama District 7,Alabama,AL,7,south,Sewell,H0AL07086,0,NA,NA,NA,Dem Hold,Sewell,H0AL07086,97.8,NA,NA,NA,97.8
+Alaska District 1,Alaska,AK,1,west,NA,NA,NA,Young,H6AK00045,53.3,GOP Hold,Young,H6AK00045,53.3,Galvin,H8AK00140,46.5,6.8
+Arizona District 1,Arizona,AZ,1,west,O'Halleran,H6AZ01199,53.8,Rogers,H2AZ09035,46.2,Dem Hold,O'Halleran,H6AZ01199,53.8,Rogers,H2AZ09035,46.2,7.6
+Arizona District 2,Arizona,AZ,2,west,Kirkpatrick,H8AZ01104,54.7,Marquez Peterson,H8AZ02185,45.3,Dem Pickup,Kirkpatrick,H8AZ01104,54.7,Marquez Peterson,H8AZ02185,45.3,9.4
+Arizona District 3,Arizona,AZ,3,west,Grijalva,H2AZ07070,63.9,Pierson,H8AZ03159,36.1,Dem Hold,Grijalva,H2AZ07070,63.9,Pierson,H8AZ03159,36.1,27.8
+Arizona District 4,Arizona,AZ,4,west,Brill,H8AZ04140,30.5,Gosar,H0AZ01259,68.2,GOP Hold,Gosar,H0AZ01259,68.2,Brill,H8AZ04140,30.5,37.7
+Arizona District 5,Arizona,AZ,5,west,Greene,H8AZ05154,40.6,Biggs,H6AZ05083,59.4,GOP Hold,Biggs,H6AZ05083,59.4,Greene,H8AZ05154,40.6,18.8
+Arizona District 6,Arizona,AZ,6,west,Malik,H8AZ06103,44.8,Schweikert,H4AZ06045,55.2,GOP Hold,Schweikert,H4AZ06045,55.2,Malik,H8AZ06103,44.8,10.4
+Arizona District 7,Arizona,AZ,7,west,Gallego,H4AZ07043,85.8,NA,NA,NA,Dem Hold,Gallego,H4AZ07043,85.8,Swing,H6AZ02213,14.2,71.6
+Arizona District 8,Arizona,AZ,8,west,Tipirneni,H8AZ08083,44.5,Lesko,H8AZ08158,55.5,GOP Hold,Lesko,H8AZ08158,55.5,Tipirneni,H8AZ08083,44.5,11
+Arizona District 9,Arizona,AZ,9,west,Stanton,H8AZ09040,61.1,Ferrara,H8AZ09024,38.9,Dem Hold,Stanton,H8AZ09040,61.1,Ferrara,H8AZ09024,38.9,22.2
+Arkansas District 1,Arkansas,AR,1,south,Desai,H8AR01029,28.8,Crawford,H0AR01083,68.9,GOP Hold,Crawford,H0AR01083,68.9,Desai,H8AR01029,28.8,40.1
+Arkansas District 2,Arkansas,AR,2,south,Tucker,H8AR02159,45.8,Hill,H4AR02141,52.1,GOP Hold,Hill,H4AR02141,52.1,Tucker,H8AR02159,45.8,6.3
+Arkansas District 3,Arkansas,AR,3,south,Mahony,H8AR03074,32.6,Womack,H0AR03055,64.8,GOP Hold,Womack,H0AR03055,64.8,Mahony,H8AR03074,32.6,32.2
+Arkansas District 4,Arkansas,AR,4,south,Shamel,H8AR04130,31.3,Westerman,H0AR03055,66.8,GOP Hold,Westerman,H0AR03055,66.8,Shamel,H8AR04130,31.3,35.5
+California District 1,California,CA,1,west,Denney,H8CA01257,45.1,LaMalfa,H2CA02142,54.9,GOP Hold,LaMalfa,H2CA02142,54.9,Denney,H8CA01257,45.1,9.8
+California District 2,California,CA,2,west,Huffman,H2CA06259,77,Mensing,H4CA02098,23,Dem Hold,Huffman,H2CA06259,77,Mensing,H4CA02098,23,54
+California District 3,California,CA,3,west,Garamendi,H0CA10149,58.1,Schaupp,H6CA03067,41.9,Dem Hold,Garamendi,H0CA10149,58.1,Schaupp,H6CA03067,41.9,16.2
+California District 4,California,CA,4,west,Morse,H8CA04210,45.9,McClintock,H8CA04152,54.1,GOP Hold,McClintock,H8CA04152,54.1,Morse,H8CA04210,45.9,8.2
+California District 5,California,CA,5,west,Thompson,H8CA01109,78.9,NA,NA,NA,Dem Hold,Thompson,H8CA01109,78.9,Mills,H8CA05209,21.1,57.8
+California District 6,California,CA,6,west,Matsui,H6CA05195,80.4,NA,NA,NA,Dem Hold,Matsui,H6CA05195,80.4,Jefferson,H8CA06090,19.6,60.8
+California District 7,California,CA,7,west,Bera,H0CA03078,55,Grant,H8CA07056,45,Dem Hold,Bera,H0CA03078,55,Grant,H8CA07056,45,10
+California District 8,California,CA,8,west,NA,NA,NA,Cook,H2CA08164,60,GOP Hold,Cook,H2CA08164,60,Donnelly,H8CA08120,40,20
+California District 9,California,CA,9,west,McNerney,H4CA11081,56.5,Livengood,H8CA09144,43.5,Dem Hold,McNerney,H4CA11081,56.5,Livengood,H8CA09144,43.5,13
+California District 10,California,CA,10,west,Harder,H8CA10126,52.3,Denham,H0CA19173,47.7,Dem Pickup,Harder,H8CA10126,52.3,Denham,H0CA19173,47.7,4.6
+California District 11,California,CA,11,west,DeSaulnier,H0CA10073,74.1,Fitzgerald,H0CA07111,25.9,Dem Hold,DeSaulnier,H0CA10073,74.1,Fitzgerald,H0CA07111,25.9,48.2
+California District 12,California,CA,12,west,Pelosi,H8CA05035,86.8,Remmer,H8CA12270,13.2,Dem Hold,Pelosi,H8CA05035,86.8,Remmer,H8CA12270,13.2,73.6
+California District 13,California,CA,13,west,Lee,H8CA09060,88.4,NA,NA,NA,Dem Hold,Lee,H8CA09060,88.4,Wells,H8CA13096,11.6,76.8
+California District 14,California,CA,14,west,Speier,H8CA12171,79.2,Osmena,H8CA14185,20.8,Dem Hold,Speier,H8CA12171,79.2,Osmena,H8CA14185,20.8,58.4
+California District 15,California,CA,15,west,Swalwell,H2CA15094,73,Peters,H8CA15117,27,Dem Hold,Swalwell,H2CA15094,73,Peters,H8CA15117,27,46
+California District 16,California,CA,16,west,Costa,H4CA20082,57.5,Heng,H8CA16065,42.5,Dem Hold,Costa,H4CA20082,57.5,Heng,H8CA16065,42.5,15
+California District 17,California,CA,17,west,Khanna,H4CA12055,75.3,Cohen,H6CA17141,24.7,Dem Hold,Khanna,H4CA12055,75.3,Cohen,H6CA17141,24.7,50.6
+California District 18,California,CA,18,west,Eshoo,H8CA12098,74.5,Russell,H8CA18087,25.5,Dem Hold,Eshoo,H8CA12098,74.5,Russell,H8CA18087,25.5,49
+California District 19,California,CA,19,west,Lofgren,H4CA16049,73.8,Aguilera,H8CA19051,26.2,Dem Hold,Lofgren,H4CA16049,73.8,Aguilera,H8CA19051,26.2,47.6
+California District 20,California,CA,20,west,Panetta,H6CA20152,81.4,NA,NA,NA,Dem Hold,Panetta,H6CA20152,81.4,Kabat,H0CA17185,18.6,62.8
+California District 21,California,CA,21,west,Cox,H8CA10167,50.4,Valadao,H2CA20094,49.6,Dem Pickup,Cox,H8CA10167,50.4,Valadao,H2CA20094,49.6,0.8
+California District 22,California,CA,22,west,Janz,H8CA22139,47.3,Nunes,H8CA20059,52.7,GOP Hold,Nunes,H8CA20059,52.7,Janz,H8CA22139,47.3,5.4
+California District 23,California,CA,23,west,Matta,H8CA23103,36.3,McCarthy,H6CA22125,63.7,GOP Hold,McCarthy,H6CA22125,63.7,Matta,H8CA23103,36.3,27.4
+California District 24,California,CA,24,west,Carbajal,H6CA24303,58.6,Fareed,H4CA24142,41.4,Dem Hold,Carbajal,H6CA24303,58.6,Fareed,H4CA24142,41.4,17.2
+California District 25,California,CA,25,west,Hill,H8CA25074,54.4,Knight,H4CA25123,45.6,Dem Pickup,Hill,H8CA25074,54.4,Knight,H4CA25123,45.6,8.8
+California District 26,California,CA,26,west,Brownley,H2CA00120,61.9,Sabato,H8CA26114,38.1,Dem Hold,Brownley,H2CA00120,61.9,Sabato,H8CA26114,38.1,23.8
+California District 27,California,CA,27,west,Chu,H0CA32101,79.2,NA,NA,NA,Dem Hold,Chu,H0CA32101,79.2,Witt,H8CA27112,20.8,58.4
+California District 28,California,CA,28,west,Schiff,H0CA27085,78.4,Nalbandian,H8CA28185,21.6,Dem Hold,Schiff,H0CA27085,78.4,Nalbandian,H8CA28185,21.6,56.8
+California District 29,California,CA,29,west,Cardenas,H2CA28113,80.6,Bernal,H6CA29203,19.4,Dem Hold,Cardenas,H2CA28113,80.6,Bernal,H6CA29203,19.4,61.2
+California District 30,California,CA,30,west,Sherman,H6CA24113,73.4,Reed,H0CA27101,26.6,Dem Hold,Sherman,H6CA24113,73.4,Reed,H0CA27101,26.6,46.8
+California District 31,California,CA,31,west,Aguilar,H2CA31125,58.7,Flynn,H6CA31134,41.3,Dem Hold,Aguilar,H2CA31125,58.7,Flynn,H6CA31134,41.3,17.4
+California District 32,California,CA,32,west,Napolitano,H8CA34068,68.8,Scott,H8CA32088,31.2,Dem Hold,Napolitano,H8CA34068,68.8,Scott,H8CA32088,31.2,37.6
+California District 33,California,CA,33,west,Lieu,H4CA33119,70,Wright,H6CA33106,30,Dem Hold,Lieu,H4CA33119,70,Wright,H6CA33106,30,40
+California District 34,California,CA,34,west,Gomez,H8CA34266,72.5,NA,NA,NA,Dem Hold,Gomez,H8CA34266,72.5,Mejia,H6CA34237,27.5,45
+California District 35,California,CA,35,west,Torres,H4CA35031,69.4,Valiente,H8CA35115,30.6,Dem Hold,Torres,H4CA35031,69.4,Valiente,H8CA35115,30.6,38.8
+California District 36,California,CA,36,west,Ruiz,H2CA36439,59,Pelzer,H8CA36170,41,Dem Hold,Ruiz,H2CA36439,59,Pelzer,H8CA36170,41,18
+California District 37,California,CA,37,west,Bass,H0CA33117,89.1,Bassilian,H8CA37293,10.9,Dem Hold,Bass,H0CA33117,89.1,Bassilian,H8CA37293,10.9,78.2
+California District 38,California,CA,38,west,Sanchez,H2CA39078,68.9,Downing,H4CA31105,31.1,Dem Hold,Sanchez,H2CA39078,68.9,Downing,H4CA31105,31.1,37.8
+California District 39,California,CA,39,west,Cisneros,H8CA39174,51.6,Kim,H8CA39240,48.4,Dem Pickup,Cisneros,H8CA39174,51.6,Kim,H8CA39240,48.4,3.2
+California District 40,California,CA,40,west,Roybal-Allard,H2CA33048,77.3,NA,NA,NA,Dem Hold,Roybal-Allard,H2CA33048,77.3,Barragan,H8CA40206,22.7,54.6
+California District 41,California,CA,41,west,Takano,H2CA43245,65.1,Smith,H8CA41170,34.9,Dem Hold,Takano,H2CA43245,65.1,Smith,H8CA41170,34.9,30.2
+California District 42,California,CA,42,west,Peacock,H8CA42228,43.5,Calvert,H2CA37023,56.5,GOP Hold,Calvert,H2CA37023,56.5,Peacock,H8CA42228,43.5,13
+California District 43,California,CA,43,west,Waters,H4CA23011,77.7,Navarro,H6CA44145,22.3,Dem Hold,Waters,H4CA23011,77.7,Navarro,H6CA44145,22.3,55.4
+California District 44,California,CA,44,west,Barragan,H6CA44103,68.3,NA,NA,NA,Dem Hold,Barragan,H6CA44103,68.3,Brown,H8CA44117,31.7,36.6
+California District 45,California,CA,45,west,Porter,H8CA45130,52.1,Walters,H4CA45097,47.9,Dem Pickup,Porter,H8CA45130,52.1,Walters,H4CA45097,47.9,4.2
+California District 46,California,CA,46,west,Correa,H6CA46116,69.1,Lambert,H8CA46120,30.9,Dem Hold,Correa,H6CA46116,69.1,Lambert,H8CA46120,30.9,38.2
+California District 47,California,CA,47,west,Lowenthal,H2CA00104,64.9,Briscoe,H8CA47078,35.1,Dem Hold,Lowenthal,H2CA00104,64.9,Briscoe,H8CA47078,35.1,29.8
+California District 48,California,CA,48,west,Rouda,H8CA48035,53.6,Rohrabacher,H8CA42061,46.4,Dem Pickup,Rouda,H8CA48035,53.6,Rohrabacher,H8CA42061,46.4,7.2
+California District 49,California,CA,49,west,Levin,H8CA49058,56.4,Harkey,H8CA49082,43.6,Dem Pickup,Levin,H8CA49058,56.4,Harkey,H8CA49082,43.6,12.8
+California District 50,California,CA,50,west,Campa-Najjar,H8CA50098,48.3,Hunter,H8CA52052,51.7,GOP Hold,Hunter,H8CA52052,51.7,Campa-Najjar,H8CA50098,48.3,3.4
+California District 51,California,CA,51,west,Vargas,H2CA50026,71.2,Hidalgo,H8CA51062,28.8,Dem Hold,Vargas,H2CA50026,71.2,Hidalgo,H8CA51062,28.8,42.4
+California District 52,California,CA,52,west,Peters,H2CA52089,63.8,Qudrat,H8CA52102,36.2,Dem Hold,Peters,H2CA52089,63.8,Qudrat,H8CA52102,36.2,27.6
+California District 53,California,CA,53,west,Davis,H0CA49055,69.1,Murtaugh,H8CA53084,30.9,Dem Hold,Davis,H0CA49055,69.1,Murtaugh,H8CA53084,30.9,38.2
+Colorado District 1,Colorado,CO,1,west,DeGette,H6CO01141,73.8,Stockham,H8CO01162,23,Dem Hold,DeGette,H6CO01141,73.8,Stockham,H8CO01162,23,50.8
+Colorado District 2,Colorado,CO,2,west,Neguse,H8CO02160,60.3,Yu,H8CO02251,33.6,Dem Hold,Neguse,H8CO02160,60.3,Yu,H8CO02251,33.6,26.7
+Colorado District 3,Colorado,CO,3,west,Mitsch,H8CO03192,NA,Tipton,H6CO03139,51.5,GOP Hold,Tipton,H6CO03139,51.5,Mitsch,H8CO03192,43.6,7.9
+Colorado District 4,Colorado,CO,4,west,McCormick,H8CO04091,39.4,Buck,H4CO04090,60.6,GOP Hold,Buck,H4CO04090,60.6,McCormick,H8CO04091,39.4,21.2
+Colorado District 5,Colorado,CO,5,west,Spaulding,H8CO05130,39.3,Lamborn,H6CO05159,57,GOP Hold,Lamborn,H6CO05159,57,Spaulding,H8CO05130,39.3,17.7
+Colorado District 6,Colorado,CO,6,west,Crow,H8CO06229,54.1,Coffman,H8CO06138,42.9,Dem Pickup,Crow,H8CO06229,54.1,Coffman,H8CO06138,42.9,11.2
+Colorado District 7,Colorado,CO,7,west,Perlmutter,H6CO07023,60.4,Barrington,H8CO07094,35.4,Dem Hold,Perlmutter,H6CO07023,60.4,Barrington,H8CO07094,35.4,25
+Connecticut District 1,Connecticut,CT,1,northeast,Larson,H8CT01046,63.7,Nye,H8CT01145,35.2,Dem Hold,Larson,H8CT01046,63.7,Nye,H8CT01145,35.2,28.5
+Connecticut District 2,Connecticut,CT,2,northeast,Courtney,H2CT02112,62.1,Postemski,H8CT02101,35.5,Dem Hold,Courtney,H2CT02112,62.1,Postemski,H8CT02101,35.5,26.6
+Connecticut District 3,Connecticut,CT,3,northeast,DeLauro,H0CT03072,64.4,Cadena,H6CT03145,35.6,Dem Hold,DeLauro,H0CT03072,64.4,Cadena,H6CT03145,35.6,28.8
+Connecticut District 4,Connecticut,CT,4,northeast,Himes,H8CT04172,60.9,Arora,H8CT04214,39.1,Dem Hold,Himes,H8CT04172,60.9,Arora,H8CT04214,39.1,21.8
+Connecticut District 5,Connecticut,CT,5,northeast,Hayes,H8CT05245,55.8,Santos,H8CT05187,44.2,Dem Hold,Hayes,H8CT05245,55.8,Santos,H8CT05187,44.2,11.6
+Delaware District 1,Delaware,DE,1,south,Rochester,H6DE00206,64.5,Walker,H6DE00214,35.5,Dem Hold,Rochester,H6DE00206,64.5,Walker,H6DE00214,35.5,29
+Florida District 1,Florida,FL,1,south,Zimmerman,H8FL01115,32.9,Gaetz,H6FL01119,67.1,GOP Hold,Gaetz,H6FL01119,67.1,Zimmerman,H8FL01115,32.9,34.2
+Florida District 2,Florida,FL,2,south,Rackleff,H8FL02097,32.6,Dunn,H6FL02208,67.4,GOP Hold,Dunn,H6FL02208,67.4,Rackleff,H8FL02097,32.6,34.8
+Florida District 3,Florida,FL,3,south,Hinson,H8FL03038,NA,Yoho,H2FL06109,57.6,GOP Hold,Yoho,H2FL06109,57.6,Hayes,H8FL03038,42.4,15.2
+Florida District 4,Florida,FL,4,south,Selmont,H8FL04085,32.4,Rutherford,H6FL04105,65.2,GOP Hold,Rutherford,H6FL04105,65.2,Selmont,H8FL04085,32.4,32.8
+Florida District 5,Florida,FL,5,south,Lawson,H0FL02086,66.8,Fuller,H8FL05157,33.2,Dem Hold,Lawson,H0FL02086,66.8,Fuller,H8FL05157,33.2,33.6
+Florida District 6,Florida,FL,6,south,Soderberg,H8FL06098,43.7,Waltz,H8FL06148,56.3,GOP Hold,Waltz,H8FL06148,56.3,Soderberg,H8FL06098,43.7,12.6
+Florida District 7,Florida,FL,7,south,Murphy,H6FL07140,57.7,Miller,H8FL07062,42.3,Dem Hold,Murphy,H6FL07140,57.7,Miller,H8FL07062,42.3,15.4
+Florida District 8,Florida,FL,8,south,Patel,H8FL08102,39.5,Posey,H8FL15107,60.5,GOP Hold,Posey,H8FL15107,60.5,Patel,H8FL08102,39.5,21
+Florida District 9,Florida,FL,9,south,Soto,H6FL09179,58,Liebnitzky,H6FL09195,42,Dem Hold,Soto,H6FL09179,58,Liebnitzky,H6FL09195,42,16
+Florida District 10,Florida,FL,10,south,Demings,H2FL08063,0,NA,NA,NA,Dem Hold,Demings,H2FL08063,100,NA,NA,0,100
+Florida District 11,Florida,FL,11,south,Cottrell,H8FL11130,34.8,Webster,H0FL08208,65.2,GOP Hold,Webster,H0FL08208,65.2,Cottrell,H8FL11130,34.8,30.4
+Florida District 12,Florida,FL,12,south,Hunter,H8FL12088,39.7,Bilirakis,H6FL09070,58.1,GOP Hold,Bilirakis,H6FL09070,58.1,Hunter,H8FL12088,39.7,18.4
+Florida District 13,Florida,FL,13,south,Crist,H6FL13205,57.6,Buck,H8FL13136,42.4,Dem Hold,Crist,H6FL13205,57.6,Buck,H8FL13136,42.4,15.2
+Florida District 14,Florida,FL,14,south,Castor,H6FL11126,0,NA,NA,NA,Dem Hold,Castor,H6FL11126,100,NA,NA,0,100
+Florida District 15,Florida,FL,15,south,Carlson,H8FL15271,47,Spano,H8FL15230,53,GOP Hold,Spano,H8FL15230,53,Carlson,H8FL15271,47,6
+Florida District 16,Florida,FL,16,south,Shapiro,H8FL16055,45.4,Buchanan,H6FL13148,54.6,GOP Hold,Buchanan,H6FL13148,54.6,Shapiro,H8FL16055,45.4,9.2
+Florida District 17,Florida,FL,17,south,Freeman-Allen,H4FL19058,NA,Steube,H8FL17053,62.3,GOP Hold,Steube,H8FL17053,62.3,Freeman-Allen,H4FL19058,37.7,24.6
+Florida District 18,Florida,FL,18,south,Baer,H8FL18028,45.7,Mast,H6FL18097,54.3,GOP Hold,Mast,H6FL18097,54.3,Baer,H8FL18028,45.7,8.6
+Florida District 19,Florida,FL,19,south,Holden,H8FL19067,37.7,Rooney,H6FL19087,62.3,GOP Hold,Rooney,H6FL19087,62.3,Holden,H8FL19067,37.7,24.6
+Florida District 20,Florida,FL,20,south,Hastings,H2FL23021,0,NA,NA,NA,Dem Hold,Hastings,H2FL23021,99.9,NA,NA,0,99.9
+Florida District 21,Florida,FL,21,south,Frankel,H2FL14053,0,NA,NA,NA,Dem Hold,Frankel,H2FL14053,100,NA,NA,0,100
+Florida District 22,Florida,FL,22,south,Deutch,H0FL19080,62,Kimaz,H8FL22061,38,Dem Hold,Deutch,H0FL19080,62,Kimaz,H8FL22061,38,24
+Florida District 23,Florida,FL,23,south,Wasserman,H4FL20023,NA,Kaufman,H2FL20043,36,Dem Hold,Wasserman,H4FL20023,58.5,Kaufman,H2FL20043,36,22.5
+Florida District 24,Florida,FL,24,south,Wilson,H0FL17068,0,NA,NA,NA,Dem Hold,Wilson,H0FL17068,100,NA,NA,0,100
+Florida District 25,Florida,FL,25,south,Barzee,H8FL27086,NA,Diaz-Balart,H2FL25018,60.5,GOP Hold,Diaz-Balart,H2FL25018,60.5,Barzee,H8FL27086,39.5,21
+Florida District 26,Florida,FL,26,south,Mucarsel-Powell,H8FL26039,50.9,Curbelo,H4FL26038,49.1,Dem Pickup,Mucarsel-Powell,H8FL26039,50.9,Curbelo,H4FL26038,49.1,1.8
+Florida District 27,Florida,FL,27,south,Shalala,H8FL27193,51.8,Salazar,H8FL27185,45.8,Dem Pickup,Shalala,H8FL27193,51.8,Salazar,H8FL27185,45.8,6
+Georgia District 1,Georgia,GA,1,south,Ring,H8GA01063,42.3,Carter,H4GA01039,57.7,GOP Hold,Carter,H4GA01039,57.7,Ring,H8GA01063,42.3,15.4
+Georgia District 2,Georgia,GA,2,south,Bishop,H2GA02031,59.6,West,H8GA02087,40.4,Dem Hold,Bishop,H2GA02031,59.6,West,H8GA02087,40.4,19.2
+Georgia District 3,Georgia,GA,3,south,Enderlin,H8GA03051,34.5,Ferguson,H6GA03113,65.5,GOP Hold,Ferguson,H6GA03113,65.5,Enderlin,H8GA03051,34.5,31
+Georgia District 4,Georgia,GA,4,south,Johnson,H6GA04129,78.8,Profit,H8GA04125,21.2,Dem Hold,Johnson,H6GA04129,78.8,Profit,H8GA04125,21.2,57.6
+Georgia District 5,Georgia,GA,5,south,Lewis,H6GA05217,0,NA,NA,NA,Dem Hold,Lewis,H6GA05217,100,NA,NA,0,100
+Georgia District 6,Georgia,GA,6,south,McBath,H8GA06393,50.5,Handel,H8GA06286,49.5,Dem Pickup,McBath,H8GA06393,50.5,Handel,H8GA06286,49.5,1
+Georgia District 7,Georgia,GA,7,south,Bourdeaux,H8GA07201,49.9,Woodall,H0GA07133,50.1,GOP Hold,Woodall,H0GA07133,50.1,Bourdeaux,H8GA07201,49.9,0.2
+Georgia District 8,Georgia,GA,8,south,NA,NA,NA,Scott,H0GA08099,0,GOP Hold,Scott,H0GA08099,99.7,NA,NA,0,99.7
+Georgia District 9,Georgia,GA,9,south,McCall,H8GA09058,20.5,Collins,H2GA09150,79.5,GOP Hold,Collins,H2GA09150,79.5,McCall,H8GA09058,20.5,59
+Georgia District 10,Georgia,GA,10,south,Johnson-Green,H8GA10197,37.1,Hice,H0GA07125,62.9,GOP Hold,Hice,H0GA07125,62.9,Johnson-Green,H8GA10197,37.1,25.8
+Georgia District 11,Georgia,GA,11,south,Broady,H8GA11062,38.2,Loudermilk,H4GA11061,61.8,GOP Hold,Loudermilk,H4GA11061,61.8,Broady,H8GA11062,38.2,23.6
+Georgia District 12,Georgia,GA,12,south,Johnson,H8GA12078,40.5,Allen,H2GA12121,59.5,GOP Hold,Allen,H2GA12121,59.5,Johnson,H8GA12078,40.5,19
+Georgia District 13,Georgia,GA,13,south,Scott,H2GA13012,76.2,Callahan,H8GA13035,23.8,Dem Hold,Scott,H2GA13012,76.2,Callahan,H8GA13035,23.8,52.4
+Georgia District 14,Georgia,GA,14,south,Foster,H8GA14025,23.5,Graves,H0GA09030,76.5,GOP Hold,Graves,H0GA09030,76.5,Foster,H8GA14025,23.5,53
+Hawaii District 1,Hawaii,HI,1,west,Case,H2HI02128,73.1,Cavasso,H8HI00012,23.1,Dem Hold,Case,H2HI02128,73.1,Cavasso,H8HI00012,23.1,50
+Hawaii District 2,Hawaii,HI,2,west,Gabbard,H2HI02508,77.4,Evans,H8HI02141,22.6,Dem Hold,Gabbard,H2HI02508,77.4,Evans,H8HI02141,22.6,54.8
+Idaho District 1,Idaho,ID,1,west,McNeil,H8ID01215,30.8,Fulcher,H8ID01124,62.7,GOP Hold,Fulcher,H8ID01124,62.7,McNeil,H8ID01215,30.8,31.9
+Idaho District 2,Idaho,ID,2,west,Swisher,H8ID02148,39.3,Simpson,H8ID02064,60.7,GOP Hold,Simpson,H8ID02064,60.7,Swisher,H8ID02148,39.3,21.4
+Illinois District 1,Illinois,IL,1,midwest,Rush,H2IL01042,73.5,Tillman,H2IL01182,19.8,Dem Hold,Rush,H2IL01042,73.5,Tillman,H2IL01182,19.8,53.7
+Illinois District 2,Illinois,IL,2,midwest,Kelly,H2IL02172,81.1,Merkle,H8IL02120,18.9,Dem Hold,Kelly,H2IL02172,81.1,Merkle,H8IL02120,18.9,62.2
+Illinois District 3,Illinois,IL,3,midwest,Lipinski,H4IL03077,73.8,Jones,H6IL03148,26.2,Dem Hold,Lipinski,H4IL03077,73.8,Jones,H6IL03148,26.2,47.6
+Illinois District 4,Illinois,IL,4,midwest,Garcia,H8IL04134,86.6,Lorch,H8IL04175,13.4,Dem Hold,Garcia,H8IL04134,86.6,Lorch,H8IL04175,13.4,73.2
+Illinois District 5,Illinois,IL,5,midwest,Quigley,H0IL05096,76.7,Hanson,H8IL05073,23.3,Dem Hold,Quigley,H0IL05096,76.7,Hanson,H8IL05073,23.3,53.4
+Illinois District 6,Illinois,IL,6,midwest,Casten,H8IL06139,53.6,Roskam,H6IL06117,46.4,Dem Pickup,Casten,H8IL06139,53.6,Roskam,H6IL06117,46.4,7.2
+Illinois District 7,Illinois,IL,7,midwest,Davis,H4IL07037,87.6,Cameron,H8IL17045,12.4,Dem Hold,Davis,H4IL07037,87.6,Cameron,H8IL17045,12.4,75.2
+Illinois District 8,Illinois,IL,8,midwest,Krishnamoorthi,H6IL08147,66,Diganvker,H8IL08101,34,Dem Hold,Krishnamoorthi,H6IL08147,66,Diganvker,H8IL08101,34,32
+Illinois District 9,Illinois,IL,9,midwest,Schakowsky,H8IL09067,73.5,Elleson,H8IL09224,26.5,Dem Hold,Schakowsky,H8IL09067,73.5,Elleson,H8IL09224,26.5,47
+Illinois District 10,Illinois,IL,10,midwest,Schneider,H2IL10068,65.6,Bennett,H8IL10115,34.4,Dem Hold,Schneider,H2IL10068,65.6,Bennett,H8IL10115,34.4,31.2
+Illinois District 11,Illinois,IL,11,midwest,Foster,H8IL14067,63.8,Stella,H6IL11133,36.2,Dem Hold,Foster,H8IL14067,63.8,Stella,H6IL11133,36.2,27.6
+Illinois District 12,Illinois,IL,12,midwest,Kelly,H8IL12129,45.4,Bost,H4IL12060,51.6,GOP Hold,Bost,H4IL12060,51.6,Kelly,H8IL12129,45.4,6.2
+Illinois District 13,Illinois,IL,13,midwest,Londrigan,H8IL13150,49.6,Davis,H2IL13120,50.4,GOP Hold,Davis,H2IL13120,50.4,Dirksen,H8IL13150,49.6,0.8
+Illinois District 14,Illinois,IL,14,midwest,Underwood,H8IL14174,52.5,Hultgren,H0IL14080,47.5,Dem Pickup,Underwood,H8IL14174,52.5,Hultgren,H0IL14080,47.5,5
+Illinois District 15,Illinois,IL,15,midwest,Gaither,H8IL15072,29.1,Shimkus,H2IL20042,70.9,GOP Hold,Shimkus,H2IL20042,70.9,Gaither,H8IL15072,29.1,41.8
+Illinois District 16,Illinois,IL,16,midwest,Dady,H8IL16120,40.9,Kinzinger,H0IL11052,59.1,GOP Hold,Kinzinger,H0IL11052,59.1,Dady,H8IL16120,40.9,18.2
+Illinois District 17,Illinois,IL,17,midwest,Bustos,H2IL17071,62.1,Fawell,H4IL17077,37.9,Dem Hold,Bustos,H2IL17071,62.1,Fawell,H4IL17077,37.9,24.2
+Illinois District 18,Illinois,IL,18,midwest,Rodriguez,H6IL18161,32.8,LaHood,H6IL18088,67.2,GOP Hold,LaHood,H6IL18088,67.2,Rodriguez,H6IL18161,32.8,34.4
+Indiana District 1,Indiana,IN,1,midwest,Visclosky,H4IN01012,65.1,Leyva,H8IN01096,34.9,Dem Hold,Visclosky,H4IN01012,65.1,Leyva,H8IN01096,34.9,30.2
+Indiana District 2,Indiana,IN,2,midwest,Hall,H8IN02169,45.2,Walorski,H0IN02190,54.8,GOP Hold,Walorski,H0IN02190,54.8,Hall,H8IN02169,45.2,9.6
+Indiana District 3,Indiana,IN,3,midwest,Tritch,H8IN03076,35.3,Banks,H6IN03229,64.7,GOP Hold,Banks,H6IN03229,64.7,Tritch,H8IN03076,35.3,29.4
+Indiana District 4,Indiana,IN,4,midwest,Beck,H8IN04124,35.9,Baird,H8IN04199,64.1,GOP Hold,Baird,H8IN04199,64.1,Beck,H8IN04124,35.9,28.2
+Indiana District 5,Indiana,IN,5,midwest,Thornton,H8IN05188,43.2,Brooks,H2IN05082,56.8,GOP Hold,Brooks,H2IN05082,56.8,Thornton,H8IN05188,43.2,13.6
+Indiana District 6,Indiana,IN,6,midwest,Lake,H8IN06152,32.9,Pence,H8IN06129,63.8,GOP Hold,Pence,H8IN06129,63.8,Lake,H8IN06152,32.9,30.9
+Indiana District 7,Indiana,IN,7,midwest,Carson,H8IN07184,64.9,Harmon,H8IN07150,35.1,Dem Hold,Carson,H8IN07184,64.9,Harmon,H8IN07150,35.1,29.8
+Indiana District 8,Indiana,IN,8,midwest,Tanoos,H8IN08141,35.6,Bucshon,H0IN08114,64.4,GOP Hold,Bucshon,H0IN08114,64.4,Tanoos,H8IN08141,35.6,28.8
+Indiana District 9,Indiana,IN,9,midwest,Watson,H8IN09107,43.5,Hollingsworth,H6IN09176,56.5,GOP Hold,Hollingsworth,H6IN09176,56.5,Watson,H8IN09107,43.5,13
+Iowa District 1,Iowa,IA,1,midwest,Finkenauer,H8IA01094,51,Blum,H2IA01055,45.9,Dem Pickup,Finkenauer,H8IA01094,51,Blum,H2IA01055,45.9,5.1
+Iowa District 2,Iowa,IA,2,midwest,Loebsack,H6IA02146,54.8,Peters,H6IA02161,42.6,Dem Hold,Loebsack,H6IA02146,54.8,Peters,H6IA02161,42.6,12.2
+Iowa District 3,Iowa,IA,3,midwest,Axne,H8IA03124,49.3,Young,H4IA03115,47.2,Dem Pickup,Axne,H8IA03124,49.3,Young,H4IA03115,47.2,2.1
+Iowa District 4,Iowa,IA,4,midwest,Scholten,H8IA04106,47,King,H2IA05072,50.4,GOP Hold,King,H2IA05072,50.4,Scholten,H8IA04106,47,3.4
+Kansas District 1,Kansas,KS,1,midwest,LaPolice,H4KS01059,31.6,Marshall,H6KS01179,68.4,GOP Hold,Marshall,H6KS01179,68.4,LaPolice,H4KS01059,31.6,36.8
+Kansas District 2,Kansas,KS,2,midwest,Davis,H8KS02173,46.4,Watkins,H8KS02199,48.1,GOP Hold,Watkins,H8KS02199,48.1,Davis,H8KS02173,46.4,1.7
+Kansas District 3,Kansas,KS,3,midwest,Davids,H8KS03155,53.3,Yoder,H0KS03137,44.2,Dem Pickup,Davids,H8KS03155,53.3,Yoder,H0KS03137,44.2,9.1
+Kansas District 4,Kansas,KS,4,midwest,Thompson,H8KS04120,40.2,Estes,H8KS04112,59.8,GOP Hold,Estes,H8KS04112,59.8,Thompson,H8KS04120,40.2,19.6
+Kentucky District 1,Kentucky,KY,1,south,Walker,H8KY01074,31.4,Comer,H6KY01110,68.6,GOP Hold,Comer,H6KY01110,68.6,Walker,H8KY01074,31.4,37.2
+Kentucky District 2,Kentucky,KY,2,south,Linderman,H8KY02080,31.1,Guthrie,H8KY02031,66.7,GOP Hold,Guthrie,H8KY02031,66.7,Linderman,H8KY02080,31.1,35.6
+Kentucky District 3,Kentucky,KY,3,south,Yarmuth,H6KY03124,62.1,Glisson,H8KY03211,36.6,Dem Hold,Yarmuth,H6KY03124,62.1,Glisson,H8KY03211,36.6,25.5
+Kentucky District 4,Kentucky,KY,4,south,Hall,H8KY04169,34.6,Massie,H2KY04121,62.2,GOP Hold,Massie,H2KY04121,62.2,Hall,H8KY04169,34.6,27.6
+Kentucky District 5,Kentucky,KY,5,south,Stepp,H6KY05111,21.1,Rogers,H0KY05015,78.9,GOP Hold,Rogers,H0KY05015,78.9,Stepp,H6KY05111,21.1,57.8
+Kentucky District 6,Kentucky,KY,6,south,McGrath,H8KY06164,47.8,Barr,H0KY06104,51,GOP Hold,Barr,H0KY06104,51,McGrath,H8KY06164,47.8,3.2
+Louisiana District 1,Louisiana,LA,1,south,Savoie,H8LA01122,16.4,Scalise,H0LA01087,71.5,GOP Hold,Scalise,H0LA01087,71.5,Savoie,H8LA01122,16.4,55.1
+Louisiana District 2,Louisiana,LA,2,south,Richmond,H8LA02054,80.6,NA,NA,NA,Dem Hold,Richmond,H8LA02054,80.6,NA,NA,0,80.6
+Louisiana District 3,Louisiana,LA,3,south,Methvin,H8LA03094,17.8,Higgins,H6LA03148,55.7,GOP Hold,Higgins,H6LA03148,55.7,Methvin,H8LA03094,17.8,37.9
+Louisiana District 4,Louisiana,LA,4,south,Trundle,H8LA04282,33.6,Johnson,H6LA04138,64.2,GOP Hold,Johnson,H6LA04138,64.2,Trundle,H8LA04282,33.6,30.6
+Louisiana District 5,Louisiana,LA,5,south,Fleenor,H8LA05099,30,Abraham,H4LA05221,66.5,GOP Hold,Abraham,H4LA05221,66.5,Fleenor,H8LA05099,30,36.5
+Louisiana District 6,Louisiana,LA,6,south,Dewitt,H8LA06154,20.5,Graves,H4LA06153,69.5,GOP Hold,Graves,H4LA06153,69.5,Dewitt,H8LA06154,20.5,49
+Maine District 1,Maine,ME,1,northeast,Pingree,H8ME01120,58.8,Holbrook,H6ME01207,32.4,Dem Hold,Pingree,H8ME01120,58.8,Holbrook,H6ME01207,32.4,26.4
+Maine District 2,Maine,ME,2,northeast,Golden,H8ME02185,45.5,Poliquin,H4ME02234,46.2,Dem Pickup,Golden,H8ME02185,45.5,Poliquin,H4ME02234,46.2,-0.7
+Maryland District 1,Maryland,MD,1,south,Colvin,H8MD01193,38.1,Harris,H8MD01094,60,GOP Hold,Harris,H8MD01094,60,Colvin,H8MD01193,38.1,21.9
+Maryland District 2,Maryland,MD,2,south,Ruppersberger,H2MD02160,66.1,Matory,H8MD02118,30.7,Dem Hold,Ruppersberger,H2MD02160,66.1,Matory,H8MD02118,30.7,35.4
+Maryland District 3,Maryland,MD,3,south,Sarbanes,H6MD03292,69.2,Anthony,H8MD03165,28.3,Dem Hold,Sarbanes,H6MD03292,69.2,Anthony,H8MD03165,28.3,40.9
+Maryland District 4,Maryland,MD,4,south,Brown,H6MD04209,78.1,McDermott,,19.9,Dem Hold,Brown,H6MD04209,78.1,McDermott,0,19.9,58.2
+Maryland District 5,Maryland,MD,5,south,Hoyer,H2MD05155,70.4,Devine,H8MD05145,27.1,Dem Hold,Hoyer,H2MD05155,70.4,Devine,H8MD05145,27.1,43.3
+Maryland District 6,Maryland,MD,6,south,Trone,H6MD08549,59,Hoeber,H6MD06212,38,Dem Hold,Trone,H6MD08549,59,Hoeber,H6MD06212,38,21
+Maryland District 7,Maryland,MD,7,south,Cummings,H6MD07160,76.5,Davis,H8MD07083,21.3,Dem Hold,Cummings,H6MD07160,76.5,Davis,H8MD07083,21.3,55.2
+Maryland District 8,Maryland,MD,8,south,Raskin,H6MD08457,68.2,Walsh,H8MD08248,30.3,Dem Hold,Raskin,H6MD08457,68.2,Walsh,H8MD08248,30.3,37.9
+Massachusetts District 1,Massachusetts,MA,1,northeast,Neal,H8MA02041,0,NA,NA,NA,Dem Hold,Neal,H8MA02041,97.6,NA,NA,0,97.6
+Massachusetts District 2,Massachusetts,MA,2,northeast,McGovern,H4MA03022,67.2,Lovvorn,H8MA02116,32.8,Dem Hold,McGovern,H4MA03022,67.2,Lovvorn,H8MA02116,32.8,34.4
+Massachusetts District 3,Massachusetts,MA,3,northeast,Trahan,H8MA03106,62,Green,H8MA03114,33.5,Dem Hold,Trahan,H8MA03106,62,Green,H8MA03114,33.5,28.5
+Massachusetts District 4,Massachusetts,MA,4,northeast,Kennedy,H2MA04073,0,NA,NA,NA,Dem Hold,Kennedy,H2MA04073,97.7,NA,NA,9,88.7
+Massachusetts District 5,Massachusetts,MA,5,northeast,Clark,H4MA05084,75.9,Hugo,H8MA05234,24.1,Dem Hold,Clark,H4MA05084,75.9,Hugo,H8MA05234,24.1,51.8
+Massachusetts District 6,Massachusetts,MA,6,northeast,Moulton,H4MA06090,65.2,Schneider,H8MA06133,31.4,Dem Hold,Moulton,H4MA06090,65.2,Schneider,H8MA06133,31.4,33.8
+Massachusetts District 7,Massachusetts,MA,7,northeast,Pressley,H8MA07032,0,NA,NA,NA,Dem Hold,Pressley,H8MA07032,98.3,NA,NA,0,98.3
+Massachusetts District 8,Massachusetts,MA,8,northeast,Lynch,H2MA09072,0,NA,NA,NA,Dem Hold,Lynch,H2MA09072,98.4,NA,NA,0,98.4
+Massachusetts District 9,Massachusetts,MA,9,northeast,Keating,H0MA10082,59.5,Tedeschi,H8MA09046,40.5,Dem Hold,Keating,H0MA10082,59.5,Tedeschi,H8MA09046,40.5,19
+Michigan District 1,Michigan,MI,1,midwest,Morgan,H8MI01149,43.7,Bergman,H6MI01226,56.3,GOP Hold,Bergman,H6MI01226,56.3,Morgan,H8MI01149,43.7,12.6
+Michigan District 2,Michigan,MI,2,midwest,Davidson,H8MI02113,43,Huizenga,H0MI02094,55.3,GOP Hold,Huizenga,H0MI02094,55.3,Davidson,H8MI02113,43,12.3
+Michigan District 3,Michigan,MI,3,midwest,Albro,H8MI03079,43.2,Amash,H0MI03126,54.4,GOP Hold,Amash,H0MI03126,54.4,Albro,H8MI03079,43.2,11.2
+Michigan District 4,Michigan,MI,4,midwest,Hilliard,H8MI04101,37.4,Moolenaar,H4MI04126,62.6,GOP Hold,Moolenaar,H4MI04126,62.6,Hilliard,H8MI04101,37.4,25.2
+Michigan District 5,Michigan,MI,5,midwest,Kildee,H2MI05119,59.5,Wines,H8MI05116,35.9,Dem Hold,Kildee,H2MI05119,59.5,Wines,H8MI05116,35.9,23.6
+Michigan District 6,Michigan,MI,6,midwest,Longjohn,H8MI06155,45.7,Upton,H6MI04113,50.2,GOP Hold,Upton,H6MI04113,50.2,Longjohn,H8MI06155,45.7,4.5
+Michigan District 7,Michigan,MI,7,midwest,Driskell,H6MI07223,46.2,Walberg,H4MI07103,53.8,GOP Hold,Walberg,H4MI07103,53.8,Driskell,H6MI07223,46.2,7.6
+Michigan District 8,Michigan,MI,8,midwest,Slotkin,H8MI08102,50.6,Bishop,H4MI08135,46.8,Dem Pickup,Slotkin,H8MI08102,50.6,Bishop,H4MI08135,46.8,3.8
+Michigan District 9,Michigan,MI,9,midwest,Levin,H2MI17023,59.7,Stearns,H8MI09092,36.8,Dem Hold,Levin,H2MI17023,59.7,Stearns,H8MI09092,36.8,22.9
+Michigan District 10,Michigan,MI,10,midwest,Bizon,H8MI10108,35,Mitchell,H4MI04118,60.3,GOP Hold,Mitchell,H4MI04118,60.3,Bizon,H8MI10108,35,25.3
+Michigan District 11,Michigan,MI,11,midwest,Stevens,H8MI11254,51.8,Epstein,H8MI11320,45.2,Dem Pickup,Stevens,H8MI11254,51.8,Epstein,H8MI11320,45.2,6.6
+Michigan District 12,Michigan,MI,12,midwest,Dingell,H4MI12079,68.1,Jones,H6MI12264,28.9,Dem Hold,Dingell,H4MI12079,68.1,Jones,H6MI12264,28.9,39.2
+Michigan District 13,Michigan,MI,13,midwest,Tlaib,H8MI13250,84.6,NA,NA,NA,Dem Hold,Tlaib,H8MI13250,84.6,NA,NA,0,84.6
+Michigan District 14,Michigan,MI,14,midwest,Lawrence,H2MI14111,80.9,Herschfus,H8MI14100,17.3,Dem Hold,Lawrence,H2MI14111,80.9,Herschfus,H8MI14100,17.3,63.6
+Minnesota District 1,Minnesota,MN,1,midwest,Feehan,H8MN01279,49.8,Hagedorn,H0MN01045,50.2,GOP Pickup,Hagedorn,H0MN01045,50.2,Feehan,H8MN01279,49.8,0.4
+Minnesota District 2,Minnesota,MN,2,midwest,Craig,H6MN02131,52.8,Lewis,H6MN02149,47.2,Dem Pickup,Craig,H6MN02131,52.8,Lewis,H6MN02149,47.2,5.6
+Minnesota District 3,Minnesota,MN,3,midwest,Phillips,H8MN03143,55.7,Paulsen,H8MN03077,44.3,Dem Pickup,Phillips,H8MN03143,55.7,Paulsen,H8MN03077,44.3,11.4
+Minnesota District 4,Minnesota,MN,4,midwest,McCollum,H0MN04049,66,Ryan,H6MN04236,29.8,Dem Hold,McCollum,H0MN04049,66,Ryan,H6MN04236,29.8,36.2
+Minnesota District 5,Minnesota,MN,5,midwest,Omar,H8MN05239,78.2,Zielinski,H8MN05213,21.8,Dem Hold,Omar,H8MN05239,78.2,Zielinski,H8MN05213,21.8,56.4
+Minnesota District 6,Minnesota,MN,6,midwest,Todd,H8MN06096,38.8,Emmer,H4MN06087,61.2,GOP Hold,Emmer,H4MN06087,61.2,Todd,H8MN06096,38.8,22.4
+Minnesota District 7,Minnesota,MN,7,midwest,Peterson,H2MN07014,52.1,Hughes,H6MN07304,47.9,Dem Hold,Peterson,H2MN07014,52.1,Hughes,H6MN07304,47.9,4.2
+Minnesota District 8,Minnesota,MN,8,midwest,Radinovich,H8MN08068,45.2,Stauber,H8MN08043,50.7,GOP Pickup,Stauber,H8MN08043,50.7,Radinovich,H8MN08068,45.2,5.5
+Mississippi District 1,Mississippi,MS,1,south,Wadkins,H8MS01145,32.3,Kelly,H6MS01131,67,GOP Hold,Kelly,H6MS01131,67,Wadkins,H8MS01145,32.3,34.7
+Mississippi District 2,Mississippi,MS,2,south,Thompson,H4MS02068,71.8,NA,NA,NA,Dem Hold,Thompson,H4MS02068,71.8,Ray,H4MS02183,21.7,50.1
+Mississippi District 3,Mississippi,MS,3,south,Evans,H8MS03216,36.3,Guest,H8MS03125,62.7,GOP Hold,Guest,H8MS03125,62.7,Evans,H8MS03216,36.3,26.4
+Mississippi District 4,Mississippi,MS,4,south,Anderson,H8MS04438,29.3,Palazzo,H0MS04120,69.6,GOP Hold,Palazzo,H0MS04120,69.6,Anderson,H8MS04438,29.3,40.3
+Missouri District 1,Missouri,MO,1,midwest,Clay,H0MO01066,80.1,Vroman,H8MO01184,16.7,Dem Hold,Clay,H0MO01066,80.1,Vroman,H8MO01184,16.7,63.4
+Missouri District 2,Missouri,MO,2,midwest,VanOstran,H8MO02208,47.2,Wagner,H2MO02102,51.2,GOP Hold,Wagner,H2MO02102,51.2,VanOstran,H8MO02208,47.2,4
+Missouri District 3,Missouri,MO,3,midwest,Geppert,H8MO03198,32.8,Luetkemeyer,H8MO09153,65.1,GOP Hold,Luetkemeyer,H8MO09153,65.1,Geppert,H8MO03198,32.8,32.3
+Missouri District 4,Missouri,MO,4,midwest,Hoagenson,H8MO04071,32.7,Hartzler,H0MO04086,64.8,GOP Hold,Hartzler,H0MO04086,64.8,Hoagenson,H8MO04071,32.7,32.1
+Missouri District 5,Missouri,MO,5,midwest,Cleaver,H4MO05234,61.7,Turk,H6MO05189,35.6,Dem Hold,Cleaver,H4MO05234,61.7,Turk,H6MO05189,35.6,26.1
+Missouri District 6,Missouri,MO,6,midwest,Martin,H8MO06092,32,Graves,H0MO06073,65.4,GOP Hold,Graves,H0MO06073,65.4,Martin,H8MO06092,32,33.4
+Missouri District 7,Missouri,MO,7,midwest,Schoolcraft,H8MO07223,30.1,Long,H0MO07113,66.2,GOP Hold,Long,H0MO07113,66.2,Schoolcraft,H8MO07223,30.1,36.1
+Missouri District 8,Missouri,MO,8,midwest,Ellis,H8MO08098,25,Smith,H4MO08162,73.4,GOP Hold,Smith,H4MO08162,73.4,Ellis,H8MO08098,25,48.4
+Montana District 1,Montana,MT,1,west,Williams,H8MT01232,46.2,Gianforte,H8MT01182,50.9,GOP Hold,Gianforte,H8MT01182,50.9,Williams,H8MT01232,46.2,4.7
+Nebraska District 1,Nebraska,NE,1,midwest,McClure,H8NE01081,39.6,Fortenberry,H4NE01064,60.4,GOP Hold,Fortenberry,H4NE01064,60.4,McClure,H8NE01081,39.6,20.8
+Nebraska District 2,Nebraska,NE,2,midwest,Eastman,H8NE02220,49,Bacon,H6NE02125,51,GOP Hold,Bacon,H6NE02125,51,Eastman,H8NE02220,49,2
+Nebraska District 3,Nebraska,NE,3,midwest,Theobald,H8NE03095,23.3,Smith,H6NE03115,76.7,GOP Hold,Smith,H6NE03115,76.7,Theobald,H8NE03095,23.3,53.4
+Nevada District 1,Nevada,NV,1,west,Titus,H8NV03036,66.2,Bentley,H8NV01261,30.9,Dem Hold,Titus,H8NV03036,66.2,Bentley,H8NV01261,30.9,35.3
+Nevada District 2,Nevada,NV,2,west,Koble,H8NV02095,41.8,Amodei,H2NV02395,58.2,GOP Hold,Amodei,H2NV02395,58.2,Koble,H8NV02095,41.8,16.4
+Nevada District 3,Nevada,NV,3,west,Lee,H6NV04020,51.9,Tarkanian,H2NV04045,42.8,Dem Hold,Lee,H6NV04020,51.9,Tarkanian,H2NV04045,42.8,9.1
+Nevada District 4,Nevada,NV,4,west,Horsford,H2NV04011,51.9,Hardy,H8NV04059,43.7,Dem Hold,Horsford,H2NV04011,51.9,Hardy,H8NV04059,43.7,8.2
+New Hampshire District 1,New Hampshire,NH,1,northeast,Pappas,H8NH01210,53.5,Edwards,H8NH01152,45,Dem Hold,Pappas,H8NH01210,53.5,Edwards,H8NH01152,45,8.5
+New Hampshire District 2,New Hampshire,NH,2,northeast,Kuster,H0NH02181,NA,Negron,H8NH02275,42.2,Dem Hold,McLane,H0NH02181,55.5,Negron,H8NH02275,42.2,13.3
+New Jersey District 1,New Jersey,NJ,1,northeast,Norcross,H4NJ01084,64.4,Dilks,H8NJ01259,33.3,Dem Hold,Norcross,H4NJ01084,64.4,Dilks,H8NJ01259,33.3,31.1
+New Jersey District 2,New Jersey,NJ,2,northeast,Van Drew,H8NJ02166,NA,Grossman,H8NJ02232,45.2,Dem Pickup,Van,H8NJ02166,52.9,Grossman,H8NJ02232,45.2,7.7
+New Jersey District 3,New Jersey,NJ,3,northeast,Kim,H8NJ03206,50,MacArthur,H4NJ03130,48.7,Dem Pickup,Kim,H8NJ03206,50,MacArthur,H4NJ03130,48.7,1.3
+New Jersey District 4,New Jersey,NJ,4,northeast,Welle,H8NJ04188,43.1,Smith,H8NJ04014,55.4,GOP Hold,Smith,H8NJ04014,55.4,Welle,H8NJ04188,43.1,12.3
+New Jersey District 5,New Jersey,NJ,5,northeast,Gottheimer,H6NJ05171,56.2,McCann,H8NJ05136,42.5,Dem Hold,Gottheimer,H6NJ05171,56.2,McCann,H8NJ05136,42.5,13.7
+New Jersey District 6,New Jersey,NJ,6,northeast,Pallone,H8NJ03073,63.6,Pezzullo,H8NJ10110,36.4,Dem Hold,Pallone,H8NJ03073,63.6,Pezzullo,H8NJ10110,36.4,27.2
+New Jersey District 7,New Jersey,NJ,7,northeast,Malinowski,H8NJ07223,51.7,Lance,H6NJ12136,46.7,Dem Pickup,Malinowski,H8NJ07223,51.7,Lance,H6NJ12136,46.7,5
+New Jersey District 8,New Jersey,NJ,8,northeast,Sires,H6NJ13191,78.1,Muniz,H8NJ08080,18.7,Dem Hold,Sires,H6NJ13191,78.1,Muniz,H8NJ08080,18.7,59.4
+New Jersey District 9,New Jersey,NJ,9,northeast,Pascrell,H6NJ08118,70.3,Fisher,H8NJ09138,28.9,Dem Hold,Pascrell,H6NJ08118,70.3,Fisher,H8NJ09138,28.9,41.4
+New Jersey District 10,New Jersey,NJ,10,northeast,Payne,H2NJ10154,NA,Khan,H6NJ08167,10.1,Dem Hold,Payne,H2NJ10154,87.6,Khan,H6NJ08167,10.1,77.5
+New Jersey District 11,New Jersey,NJ,11,northeast,Sherrill,H8NJ11142,56.8,Webber,H8NJ11217,42.1,Dem Pickup,Sherrill,H8NJ11142,56.8,Webber,H8NJ11217,42.1,14.7
+New Jersey District 12,New Jersey,NJ,12,northeast,Coleman,H4NJ12149,NA,Kipnis,H8NJ12108,31.3,Dem Hold,Watson,H4NJ12149,68.7,Kipnis,H8NJ12108,31.3,37.4
+New Mexico District 1,New Mexico,NM,1,west,Haaland,H8NM01331,59.1,Arnold-Jones,H8NM01372,36.3,Dem Hold,Haaland,H8NM01331,59.1,Arnold-Jones,H8NM01372,36.3,22.8
+New Mexico District 2,New Mexico,NM,2,west,Small,H8NM02248,50.9,Herrell,H8NM02156,49.1,Dem Pickup,Small,H8NM02248,50.9,Herrell,H8NM02156,49.1,1.8
+New Mexico District 3,New Mexico,NM,3,west,Lujan,H8NM03196,63.4,McFall,H6NM03059,31.2,Dem Hold,Lujan,H8NM03196,63.4,McFall,H6NM03059,31.2,32.2
+New York District 1,New York,NY,1,northeast,Gershon,H8NY01155,47.4,Zeldin,H8NY01148,51.5,GOP Hold,Zeldin,H8NY01148,51.5,Gershon,H8NY01155,47.4,4.1
+New York District 2,New York,NY,2,northeast,Grechen,H8NY02104,NA,King,H2NY03089,53.1,GOP Hold,King,H2NY03089,53.1,Grechen,H8NY02104,46.9,6.2
+New York District 3,New York,NY,3,northeast,Suozzi,H6NY03247,59,DeBono,H8NY03151,41,Dem Hold,Suozzi,H6NY03247,59,DeBono,H8NY03151,41,18
+New York District 4,New York,NY,4,northeast,Rice,H4NY04075,61.3,Benno,H8NY04084,38.7,Dem Hold,Rice,H4NY04075,61.3,Benno,H8NY04084,38.7,22.6
+New York District 5,New York,NY,5,northeast,Meeks,H8NY06048,0,NA,NA,NA,Dem Hold,Meeks,H8NY06048,100,NA,NA,0,100
+New York District 6,New York,NY,6,northeast,Meng,H2NY06116,90.9,NA,NA,NA,Dem Hold,Meng,H2NY06116,90.9,Hillgardner,H8NY06113,9.1,81.8
+New York District 7,New York,NY,7,northeast,Velazquez,H2NY00010,93.4,NA,NA,NA,Dem Hold,Velazquez,H2NY00010,93.4,NA,NA,0,93.4
+New York District 8,New York,NY,8,northeast,Jeffries,H2NY10092,94.2,NA,NA,NA,Dem Hold,Jeffries,H2NY10092,94.2,NA,NA,0,94.2
+New York District 9,New York,NY,9,northeast,Clarke,H4NY11138,89.3,Gayot,H8NY09174,10.3,Dem Hold,Clarke,H4NY11138,89.3,Gayot,H8NY09174,10.3,79
+New York District 10,New York,NY,10,northeast,Nadler,H2NY17071,82.1,Levin,H8NY10099,17.9,Dem Hold,Nadler,H2NY17071,82.1,Levin,H8NY10099,17.9,64.2
+New York District 11,New York,NY,11,northeast,Rose,H8NY11113,53,Donovan,H6NY11174,46.6,Dem Pickup,Rose,H8NY11113,53,Donovan,H6NY11174,46.6,6.4
+New York District 12,New York,NY,12,northeast,Maloney,H2NY14037,86.4,Rabin,H8NY12145,12.1,Dem Hold,Maloney,H2NY14037,86.4,Rabin,H8NY12145,12.1,74.3
+New York District 13,New York,NY,13,northeast,Espaillat,H2NY13096,94.6,Butler,H8NY13150,5.4,Dem Hold,Espaillat,H2NY13096,94.6,Butler,H8NY13150,5.4,89.2
+New York District 14,New York,NY,14,northeast,Ocasio-Cortez,H8NY15148,78.2,Pappas,H8NY14133,13.6,Dem Hold,Ocasio-Cortez,H8NY15148,78.2,Pappas,H8NY14133,13.6,64.6
+New York District 15,New York,NY,15,northeast,Serrano,H0NY18065,96,Gonzalez,H6TX15162,4,Dem Hold,Serrano,H0NY18065,96,Gonzalez,H6TX15162,4,92
+New York District 16,New York,NY,16,northeast,Engel,H8NY19058,0,NA,NA,NA,Dem Hold,Engel,H8NY19058,100,NA,NA,0,100
+New York District 17,New York,NY,17,northeast,Lowey,H8NY20056,88,NA,NA,NA,Dem Hold,Lowey,H8NY20056,88,Ciardullo,H8NY17110,12,76
+New York District 18,New York,NY,18,northeast,Maloney,H2NY22139,55.5,O'Donnell,H8NY18274,44.5,Dem Hold,Maloney,H2NY22139,55.5,O'Donnell,H8NY18274,44.5,11
+New York District 19,New York,NY,19,northeast,Delgado,H8NY19181,51.4,Faso,H6NY19169,46.2,Dem Pickup,Delgado,H8NY19181,51.4,Faso,H6NY19169,46.2,5.2
+New York District 20,New York,NY,20,northeast,Tonko,H8NY21203,66.5,Vitollo,H6NY20209,33.5,Dem Hold,Tonko,H8NY21203,66.5,Vitollo,H6NY20209,33.5,33
+New York District 21,New York,NY,21,northeast,Cobb,H8NY21245,42.4,Stefanik,H4NY21079,56.1,GOP Hold,Stefanik,H4NY21079,56.1,Cobb,H8NY21245,42.4,13.7
+New York District 22,New York,NY,22,northeast,Brindisi,H8NY22151,50.9,Tenney,H4NY22051,49.1,Dem Pickup,Brindisi,H8NY22151,50.9,Tenney,H4NY22051,49.1,1.8
+New York District 23,New York,NY,23,northeast,Mitrano,H8NY23183,45.8,Reed,H0NY29054,54.2,GOP Hold,Reed,H0NY29054,54.2,Mitrano,H8NY23183,45.8,8.4
+New York District 24,New York,NY,24,northeast,Balter,H8NY24090,47.4,Katko,H4NY24073,52.6,GOP Hold,Katko,H4NY24073,52.6,Balter,H8NY24090,47.4,5.2
+New York District 25,New York,NY,25,northeast,Morelle,H8NY25105,59,Maxwell,H8NY25097,41,Dem Hold,Morelle,H8NY25105,59,Maxwell,H8NY25097,41,18
+New York District 26,New York,NY,26,northeast,Higgins,H4NY27076,73.3,Zeno,H8NY26137,26.7,Dem Hold,Higgins,H4NY27076,73.3,Zeno,H8NY26137,26.7,46.6
+New York District 27,New York,NY,27,northeast,McMurray,H8NY27176,48.8,Collins,H8NY29032,49.1,GOP Hold,Collins,H8NY29032,49.1,McMurray,H8NY27176,48.8,0.3
+North Carolina District 1,North Carolina,NC,1,south,Butterfield,H4NC01046,69.8,Allison,H8NC01104,30.2,Dem Hold,Butterfield,H4NC01046,69.8,Allison,H8NC01104,30.2,39.6
+North Carolina District 2,North Carolina,NC,2,south,Coleman,H8NC02110,45.7,Holding,H2NC13110,51.4,GOP Hold,Holding,H2NC13110,51.4,Coleman,H8NC02110,45.7,5.7
+North Carolina District 3,North Carolina,NC,3,south,NA,NA,NA,Jones,H2NC01081,0,GOP Hold,Jones,H2NC01081,100,NA,NA,0,100
+North Carolina District 4,North Carolina,NC,4,south,Price,H6NC04037,72.3,Loor,H8NC04090,24.1,Dem Hold,Price,H6NC04037,72.3,Loor,H8NC04090,24.1,48.2
+North Carolina District 5,North Carolina,NC,5,south,Adams,H8NC05063,42.8,Foxx,H4NC05146,57.2,GOP Hold,Foxx,H4NC05146,57.2,Adams,H8NC05063,42.8,14.4
+North Carolina District 6,North Carolina,NC,6,south,Watts,H8NC06079,43.4,Walker,H4NC06052,56.6,GOP Hold,Walker,H4NC06052,56.6,Watts,H8NC06079,43.4,13.2
+North Carolina District 7,North Carolina,NC,7,south,Horton,H8NC07101,42.7,Rouzer,H2NC07096,55.6,GOP Hold,Rouzer,H2NC07096,55.6,Horton,H8NC07101,42.7,12.9
+North Carolina District 8,North Carolina,NC,8,south,McNeill,H8NC08083,44.6,Hudson,H2NC08185,55.4,GOP Hold,Hudson,H2NC08185,55.4,McNeill,H8NC08083,44.6,10.8
+North Carolina District 9,North Carolina,NC,9,south,McCready,H8NC09123,48.8,Harris,H6NC09200,49.4,NA,McCready,H8NC09123,48.8,Harris,H6NC09200,49.4,-0.6
+North Carolina District 10,North Carolina,NC,10,south,Brown,H8NC10097,40.7,McHenry,H4NC10047,59.3,GOP Hold,McHenry,H4NC10047,59.3,Brown,H8NC10097,40.7,18.6
+North Carolina District 11,North Carolina,NC,11,south,Price,H8NC11103,38.7,Meadows,H2NC11080,59.2,GOP Hold,Meadows,H2NC11080,59.2,Price,H8NC11103,38.7,20.5
+North Carolina District 12,North Carolina,NC,12,south,Adams,H4NC12100,73,Wright,H6NC12089,27,Dem Hold,Adams,H4NC12100,73,Wright,H6NC12089,27,46
+North Carolina District 13,North Carolina,NC,13,south,Manning,H8NC13067,45.5,Budd,H6NC13129,51.6,GOP Hold,Budd,H6NC13129,51.6,Manning,H8NC13067,45.5,6.1
+North Dakota District 1,North Dakota,ND,1,midwest,Schneider,H8ND00112,35.6,Armstrong,H8ND00096,60.3,GOP Hold,Armstrong,H8ND00096,60.3,Schneider,H8ND00112,35.6,24.7
+Ohio District 1,Ohio,OH,1,midwest,Pureval,H8OH01118,46.9,Chabot,H8OH01043,51.3,GOP Hold,Chabot,H8OH01043,51.3,Pureval,H8OH01118,46.9,4.4
+Ohio District 2,Ohio,OH,2,midwest,Schiller,H8OH02124,41.2,Wenstrup,H2OH02085,57.6,GOP Hold,Wenstrup,H2OH02085,57.6,Schiller,H8OH02124,41.2,16.4
+Ohio District 3,Ohio,OH,3,midwest,Beatty,H2OH03125,73.6,Burgess,H8OH03106,26.4,Dem Hold,Beatty,H2OH03125,73.6,Burgess,H8OH03106,26.4,47.2
+Ohio District 4,Ohio,OH,4,midwest,Garrett,H4OH04046,34.7,Jordan,H6OH04082,65.3,GOP Hold,Jordan,H6OH04082,65.3,Garrett,H4OH04046,34.7,30.6
+Ohio District 5,Ohio,OH,5,midwest,Galbraith,H8OH05150,35.1,Latta,H8OH05036,62.3,GOP Hold,Latta,H8OH05036,62.3,Galbraith,H8OH05150,35.1,27.2
+Ohio District 6,Ohio,OH,6,midwest,Roberts,H8OH06133,30.7,Johnson,H0OH06189,69.3,GOP Hold,Johnson,H0OH06189,69.3,Roberts,H8OH06133,30.7,38.6
+Ohio District 7,Ohio,OH,7,midwest,Harbaugh,H8OH07123,41.3,Gibbs,H0OH18077,58.7,GOP Hold,Gibbs,H0OH18077,58.7,Harbaugh,H8OH07123,41.3,17.4
+Ohio District 8,Ohio,OH,8,midwest,Enoch,H8OH08097,33.4,Davidson,H6OH08315,66.6,GOP Hold,Davidson,H6OH08315,66.6,Enoch,H8OH08097,33.4,33.2
+Ohio District 9,Ohio,OH,9,midwest,Kaptur,H2OH09031,67.8,Kraus,H8OH09111,32.2,Dem Hold,Kaptur,H2OH09031,67.8,Kraus,H8OH09111,32.2,35.6
+Ohio District 10,Ohio,OH,10,midwest,Gasper,H8OH10119,42.2,Turner,H2OH03067,55.9,GOP Hold,Turner,H2OH03067,55.9,Gasper,H8OH10119,42.2,13.7
+Ohio District 11,Ohio,OH,11,midwest,Fudge,H8OH11141,82.2,Goldstein,H6OH11160,17.8,Dem Hold,Fudge,H8OH11141,82.2,Goldstein,H6OH11160,17.8,64.4
+Ohio District 12,Ohio,OH,12,midwest,O'Connor,H8OH12297,47.2,Balderson,H8OH12180,51.4,GOP Hold,Balderson,H8OH12180,51.4,O'Connor,H8OH12297,47.2,4.2
+Ohio District 13,Ohio,OH,13,midwest,Ryan,H2OH17109,61,DePizzo,H8OH13147,39,Dem Hold,Ryan,H2OH17109,61,DePizzo,H8OH13147,39,22
+Ohio District 14,Ohio,OH,14,midwest,Rader,H8OH14111,44.8,Joyce,H2OH14064,55.2,GOP Hold,Joyce,H2OH14064,55.2,Rader,H8OH14111,44.8,10.4
+Ohio District 15,Ohio,OH,15,midwest,Neal,H8OH15134,39.7,Stivers,H8OH15076,58.3,GOP Hold,Stivers,H8OH15076,58.3,Neal,H8OH15134,39.7,18.6
+Ohio District 16,Ohio,OH,16,midwest,Palmer,H8OH16157,43.3,Gonzalez,H8OH16124,56.7,GOP Hold,Gonzalez,H8OH16124,56.7,Palmer,H8OH16157,43.3,13.4
+Oklahoma District 1,Oklahoma,OK,1,south,Gilpin,H8OK01173,40.7,Hern,H8OK01157,59.3,GOP Hold,Hern,H8OK01157,59.3,Gilpin,H8OK01173,40.7,18.6
+Oklahoma District 2,Oklahoma,OK,2,south,Nichols,H8OK02148,30.1,Mullin,H2OK02083,65,GOP Hold,Mullin,H2OK02083,65,Nichols,H8OK02148,30.1,34.9
+Oklahoma District 3,Oklahoma,OK,3,south,Robbins,H8OK03047,26.1,Lucas,H4OK06056,73.9,GOP Hold,Lucas,H4OK06056,73.9,Robbins,H8OK03047,26.1,47.8
+Oklahoma District 4,Oklahoma,OK,4,south,Brannon,H8OK04094,33,Cole,H2OK04055,63.1,GOP Hold,Cole,H2OK04055,63.1,Brannon,H8OK04094,33,30.1
+Oklahoma District 5,Oklahoma,OK,5,south,Horn,H8OK05109,50.7,Russell,H4OK05132,49.3,Dem Pickup,Horn,H8OK05109,50.7,Russell,H4OK05132,49.3,1.4
+Oregon District 1,Oregon,OR,1,west,Bonamici,H2OR01133,63.7,Verbeek,H8OR01262,32.1,Dem Hold,Bonamici,H2OR01133,63.7,Verbeek,H8OR01262,32.1,31.6
+Oregon District 2,Oregon,OR,2,west,McLeod-Skinner,H8OR02161,39.4,Walden,H6OR02116,56.3,GOP Hold,Walden,H6OR02116,56.3,McLeod-Skinner,H8OR02161,39.4,16.9
+Oregon District 3,Oregon,OR,3,west,Blumenauer,H6OR03064,72.7,Harrison,H8OR03102,19.9,Dem Hold,Blumenauer,H6OR03064,72.7,Harrison,H8OR03102,19.9,52.8
+Oregon District 4,Oregon,OR,4,west,DeFazio,H6OR04047,56,Robinson,H0OR04081,40.9,Dem Hold,DeFazio,H6OR04047,56,Robinson,H0OR04081,40.9,15.1
+Oregon District 5,Oregon,OR,5,west,Schrader,H8OR05107,55.1,Callahan,H8OR05198,41.9,Dem Hold,Schrader,H8OR05107,55.1,Callahan,H8OR05198,41.9,13.2
+Pennsylvania District 1,Pennsylvania,PA,1,northeast,Wallace,H8PA08174,48.7,Fitzpatrick,H6PA08277,51.3,GOP Hold,Fitzpatrick,H6PA08277,51.3,Wallace,H8PA08174,48.7,2.6
+Pennsylvania District 2,Pennsylvania,PA,2,northeast,Boyle,H4PA13199,79,Torres,H8PA02110,21,Dem Hold,Boyle,H4PA13199,79,Torres,H8PA02110,21,58
+Pennsylvania District 3,Pennsylvania,PA,3,northeast,Evans,H6PA02171,93.4,Leib,H6PA01165,6.6,Dem Hold,Evans,H6PA02171,93.4,Leib,H6PA01165,6.6,86.8
+Pennsylvania District 4,Pennsylvania,PA,4,northeast,Dean,H8PA04116,63.5,David,H8PA15286,36.5,Dem Hold,Dean,H8PA04116,63.5,David,H8PA15286,36.5,27
+Pennsylvania District 5,Pennsylvania,PA,5,northeast,Scanlon,H8PA07200,65.2,Kim,H8PA05295,34.8,Dem Pickup,Scanlon,H8PA07200,65.2,Kim,H8PA05295,34.8,30.4
+Pennsylvania District 6,Pennsylvania,PA,6,northeast,Houlahan,H8PA06087,58.9,McCauley,H8PA07192,41.1,Dem Pickup,Houlahan,H8PA06087,58.9,McCauley,H8PA07192,41.1,17.8
+Pennsylvania District 7,Pennsylvania,PA,7,northeast,Wild,H8PA15229,53.5,Nothstein,H8PA15245,43.5,Dem Pickup,Wild,H8PA15229,53.5,Nothstein,H8PA15245,43.5,10
+Pennsylvania District 8,Pennsylvania,PA,8,northeast,Cartwright,H2PA17079,54.6,Chrin,H8PA17050,45.4,Dem Hold,Cartwright,H2PA17079,54.6,Chrin,H8PA17050,45.4,9.2
+Pennsylvania District 9,Pennsylvania,PA,9,northeast,Wolff,H8PA11095,40.3,Meuser,H8PA10147,59.7,GOP Hold,Meuser,H8PA10147,59.7,Wolff,H8PA11095,40.3,19.4
+Pennsylvania District 10,Pennsylvania,PA,10,northeast,Scott,H8PA04090,48.7,Perry,H2PA04135,51.3,GOP Hold,Perry,H2PA04135,51.3,Scott,H8PA04090,48.7,2.6
+Pennsylvania District 11,Pennsylvania,PA,11,northeast,King,H8PA16078,41,Smucker,H6PA16320,59,GOP Hold,Smucker,H6PA16320,59,King,H8PA16078,41,18
+Pennsylvania District 12,Pennsylvania,PA,12,northeast,Friedenberg,H8PA05204,34,Marino,H0PA10078,66,GOP Hold,Marino,H0PA10078,66,Friedenberg,H8PA05204,34,32
+Pennsylvania District 13,Pennsylvania,PA,13,northeast,Ottaway,H8PA13133,29.5,Joyce,H8PA13125,70.5,GOP Hold,Joyce,H8PA13125,70.5,Ottaway,H8PA13133,29.5,41
+Pennsylvania District 14,Pennsylvania,PA,14,northeast,Boerio,H8PA14065,42.1,Reschenthaler,H8PA18199,57.9,GOP Pickup,Reschenthaler,H8PA18199,57.9,Boerio,H8PA14065,42.1,15.8
+Pennsylvania District 15,Pennsylvania,PA,15,northeast,Boser,H8PA09065,32.2,Thompson,H8PA05071,67.8,GOP Hold,Thompson,H8PA05071,67.8,Boser,H8PA09065,32.2,35.6
+Pennsylvania District 16,Pennsylvania,PA,16,northeast,DiNicola,H4PA21069,47.3,Kelly,H0PA03271,51.6,GOP Hold,Kelly,H0PA03271,51.6,DiNicola,H4PA21069,47.3,4.3
+Pennsylvania District 17,Pennsylvania,PA,17,northeast,Lamb,H8PA18181,56.3,Rothfus,H0PA04220,43.7,Dem Pickup,Lamb,H8PA18181,56.3,Rothfus,H0PA04220,43.7,12.6
+Pennsylvania District 18,Pennsylvania,PA,18,northeast,Doyle,H4PA18131,0,NA,NA,NA,Dem Hold,Doyle,H4PA18131,0,NA,NA,NA,#VALUE!
+Rhode Island District 1,Rhode Island,RI,1,northeast,Cicilline,H0RI01073,66.9,Donovan,H8RI01100,33.1,Dem Hold,Cicilline,H0RI01073,66.9,Donovan,H8RI01100,33.1,33.8
+Rhode Island District 2,Rhode Island,RI,2,northeast,Langevin,H0RI02139,63.6,Caiozzo,H6RI02284,36.4,Dem Hold,Langevin,H0RI02139,63.6,Caiozzo,H6RI02284,36.4,27.2
+South Carolina District 1,South Carolina,SC,1,south,Cunningham,H8SC01116,50.7,Arrington,H8SC01124,49.3,Dem Pickup,Cunningham,H8SC01116,50.7,Arrington,H8SC01124,49.3,1.4
+South Carolina District 2,South Carolina,SC,2,south,Carrigan,H8SC02106,42.5,Wilson,H2SC02059,56.3,GOP Hold,Wilson,H2SC02059,56.3,Carrigan,H8SC02106,42.5,13.8
+South Carolina District 3,South Carolina,SC,3,south,Geren,H8SC03070,31,Duncan,H0SC03077,67.8,GOP Hold,Duncan,H0SC03077,67.8,Geren,H8SC03070,31,36.8
+South Carolina District 4,South Carolina,SC,4,south,Brown,H8SC04300,36.6,Timmons,H8SC04250,59.6,GOP Hold,Timmons,H8SC04250,59.6,Brown,H8SC04300,36.6,23
+South Carolina District 5,South Carolina,SC,5,south,Parnell,H8SC05174,41.5,Norman,H8SC05158,57.1,GOP Hold,Norman,H8SC05158,57.1,Parnell,H8SC05174,41.5,15.6
+South Carolina District 6,South Carolina,SC,6,south,Clyburn,H2SC02042,70.2,Gressmann,H8SC06107,28.3,Dem Hold,Clyburn,H2SC02042,70.2,Gressmann,H8SC06107,28.3,41.9
+South Carolina District 7,South Carolina,SC,7,south,Williams,H8SC07063,40.4,Rice,H2SC07066,59.6,GOP Hold,Rice,H2SC07066,59.6,Williams,H8SC07063,40.4,19.2
+South Dakota District 1,South Dakota,SD,1,midwest,Bjorkman,H8SD01097,36,Johnson,H8SD01055,60.3,GOP Hold,Johnson,H8SD01055,60.3,Bjorkman,H8SD01097,36,24.3
+Tennessee District 1,Tennessee,TN,1,south,Olsen,H8TN01079,21,Roe,H6TN01388,77.1,GOP Hold,Roe,H6TN01388,77.1,Olsen,H8TN01079,21,56.1
+Tennessee District 2,Tennessee,TN,2,south,Hoyos,H8TN02176,33.1,Burchett,H8TN02119,65.9,GOP Hold,Burchett,H8TN02119,65.9,Hoyos,H8TN02176,33.1,32.8
+Tennessee District 3,Tennessee,TN,3,south,Mitchell,H8TN03208,34.5,Fleischmann,H0TN03254,63.7,GOP Hold,Fleischmann,H0TN03254,63.7,Mitchell,H8TN03208,34.5,29.2
+Tennessee District 4,Tennessee,TN,4,south,Phillips,H8TN04099,33.6,DesJarlais,H0TN04195,63.4,GOP Hold,DesJarlais,H0TN04195,63.4,Phillips,H8TN04099,33.6,29.8
+Tennessee District 5,Tennessee,TN,5,south,Cooper,H2TN05131,67.8,Ball,H6TN05314,32.2,Dem Hold,Cooper,H2TN05131,67.8,Ball,H6TN05314,32.2,35.6
+Tennessee District 6,Tennessee,TN,6,south,Barlow,H8TN06128,28.3,Rose,H8TN06094,69.5,GOP Hold,Rose,H8TN06094,69.5,Barlow,H8TN06128,28.3,41.2
+Tennessee District 7,Tennessee,TN,7,south,Kanew,H8TN07068,32.1,Green,H8TN07076,66.9,GOP Hold,Green,H8TN07076,66.9,Kanew,H8TN07068,32.1,34.8
+Tennessee District 8,Tennessee,TN,8,south,Pearson,H6TN08250,30.1,Kustoff,H2TN07103,67.7,GOP Hold,Kustoff,H2TN07103,67.7,Pearson,H6TN08250,30.1,37.6
+Tennessee District 9,Tennessee,TN,9,south,Cohen,H6TN09068,80,Bergmann,H8TN09114,19.2,Dem Hold,Cohen,H6TN09068,80,Bergmann,H8TN09114,19.2,60.8
+Texas District 1,Texas,TX,1,south,McKellar,H2TX01062,26.3,Gohmert,H4TX04039,72.3,GOP Hold,Gohmert,H4TX04039,72.3,McKellar,H2TX01062,26.3,46
+Texas District 2,Texas,TX,2,south,Litton,H8TX02067,45.6,Crenshaw,H8TX02166,52.8,GOP Hold,Crenshaw,H8TX02166,52.8,Litton,H8TX02067,45.6,7.2
+Texas District 3,Texas,TX,3,south,Burch,H8TX03099,44.3,Taylor,H8TX03123,54.3,GOP Hold,Taylor,H8TX03123,54.3,Burch,H8TX03099,44.3,10
+Texas District 4,Texas,TX,4,south,Krantz,H8TX04162,23,Ratcliffe,H4TX04153,75.7,GOP Hold,Ratcliffe,H4TX04153,75.7,Krantz,H8TX04162,23,52.7
+Texas District 5,Texas,TX,5,south,Wood,H8TX05086,37.6,Gooden,H8TX05144,62.4,GOP Hold,Gooden,H8TX05144,62.4,Wood,H8TX05086,37.6,24.8
+Texas District 6,Texas,TX,6,south,Sanchez,H8TX06183,45.4,Wright,H8TX06233,53.1,GOP Hold,Wright,H8TX06233,53.1,Sanchez,H8TX06183,45.4,7.7
+Texas District 7,Texas,TX,7,south,Fletcher,H8TX07140,52.5,Culberson,H0TX07055,47.5,Dem Pickup,Fletcher,H8TX07140,52.5,Culberson,H0TX07055,47.5,5
+Texas District 8,Texas,TX,8,south,David,H8TX08080,24.9,Brady,H6TX08100,73.4,GOP Hold,Brady,H6TX08100,73.4,David,H8TX08080,24.9,48.5
+Texas District 9,Texas,TX,9,south,Green,H4TX09095,89.1,NA,NA,NA,Dem Hold,Green,H4TX09095,89.1,NA,NA,NA,89.1
+Texas District 10,Texas,TX,10,south,Siegel,H8TX10110,46.8,McCaul,H4TX10093,51.1,GOP Hold,McCaul,H4TX10093,51.1,Siegel,H8TX10110,46.8,4.3
+Texas District 11,Texas,TX,11,south,Leeder,H8TX11100,18.4,Conaway,H4TX19136,80.1,GOP Hold,Conaway,H4TX19136,80.1,Leeder,H8TX11100,18.4,61.7
+Texas District 12,Texas,TX,12,south,Adia,H8TX12074,33.9,Granger,H6TX12060,64.3,GOP Hold,Granger,H6TX12060,64.3,Adia,H8TX12074,33.9,30.4
+Texas District 13,Texas,TX,13,south,Sagan,H8TX13163,16.9,Thornberry,H4TX13014,81.5,GOP Hold,Thornberry,H4TX13014,81.5,Sagan,H8TX13163,16.9,64.6
+Texas District 14,Texas,TX,14,south,Bell,H8TX14120,39.3,Weber,H2TX14149,59.2,GOP Hold,Weber,H2TX14149,59.2,Bell,H8TX14120,39.3,19.9
+Texas District 15,Texas,TX,15,south,Gonzalez,H6TX15162,59.7,Westley,H6TX15204,38.8,Dem Hold,Gonzalez,H6TX15162,59.7,Westley,H6TX15204,38.8,20.9
+Texas District 16,Texas,TX,16,south,Escobar,H8TX16109,68.5,Seeberger,H8TX16133,27,Dem Hold,Escobar,H8TX16109,68.5,Seeberger,H8TX16133,27,41.5
+Texas District 17,Texas,TX,17,south,Kennedy,H8TX17149,41.3,Flores,H0TX17104,56.8,GOP Hold,Flores,H0TX17104,56.8,Kennedy,H8TX17149,41.3,15.5
+Texas District 18,Texas,TX,18,south,Lee,H4TX18054,NA,Pate,H6TX18158,20.8,Dem Hold,Jackson,H4TX18054,75.2,Pate,H6TX18158,20.8,54.4
+Texas District 19,Texas,TX,19,south,Levario,H8TX19111,24.8,Arrington,H6TX19099,75.2,GOP Hold,Arrington,H6TX19099,75.2,Levario,H8TX19111,24.8,50.4
+Texas District 20,Texas,TX,20,south,Castro,H2TX35011,80.9,NA,NA,NA,Dem Hold,Castro,H2TX35011,80.9,Blunt,H8TX21125,19.1,61.8
+Texas District 21,Texas,TX,21,south,Kopser,H8TX21190,47.6,Roy,H8TX21307,50.2,GOP Hold,Roy,H8TX21307,50.2,Kopser,H8TX21190,47.6,2.6
+Texas District 22,Texas,TX,22,south,Kulkarni,H8TX22313,46.5,Olson,H8TX22107,51.4,GOP Hold,Olson,H8TX22107,51.4,Kulkarni,H8TX22313,46.5,4.9
+Texas District 23,Texas,TX,23,south,Jones,H8TX23121,NA,Hurd,H0TX23086,49.2,GOP Hold,Hurd,H0TX23086,49.2,Ortiz,H8TX23121,48.7,0.5
+Texas District 24,Texas,TX,24,south,McDowell,H6TX24149,47.5,Marchant,H4TX24094,50.6,GOP Hold,Marchant,H4TX24094,50.6,McDowell,H6TX24149,47.5,3.1
+Texas District 25,Texas,TX,25,south,Oliver,H8TX25159,44.8,Williams,H2TX33040,53.5,GOP Hold,Williams,H2TX33040,53.5,Oliver,H8TX25159,44.8,8.7
+Texas District 26,Texas,TX,26,south,Fagan,H8TX26124,39,Burgess,H2TX26093,59.4,GOP Hold,Burgess,H2TX26093,59.4,Fagan,H8TX26124,39,20.4
+Texas District 27,Texas,TX,27,south,Holguin,H8TX27056,36.6,Cloud,H8TX27049,60.3,GOP Hold,Cloud,H8TX27049,60.3,Holguin,H8TX27056,36.6,23.7
+Texas District 28,Texas,TX,28,south,Cuellar,H2TX23082,84.4,NA,NA,NA,Dem Hold,Cuellar,H2TX23082,84.4,Thomas,H8TX28211,15.6,68.8
+Texas District 29,Texas,TX,29,south,Garcia,H8TX29052,75.1,Aronoff,H8TX29094,23.9,Dem Hold,Garcia,H8TX29052,75.1,Aronoff,H8TX29094,23.9,51.2
+Texas District 30,Texas,TX,30,south,Johnson,H2TX00015,91.1,NA,NA,NA,Dem Hold,Johnson,H2TX00015,91.1,Jones,H8TX30050,8.9,82.2
+Texas District 31,Texas,TX,31,south,Hegar,H8TX31058,47.7,Carter,H2TX31044,50.6,GOP Hold,Carter,H2TX31044,50.6,Hegar,H8TX31058,47.7,2.9
+Texas District 32,Texas,TX,32,south,Allred,H8TX32098,52.3,Sessions,H2TX03126,45.8,Dem Pickup,Allred,H8TX32098,52.3,Sessions,H2TX03126,45.8,6.5
+Texas District 33,Texas,TX,33,south,Veasey,H2TX33073,76.2,Billups,H8TX33021,21.9,Dem Hold,Veasey,H2TX33073,76.2,Billups,H8TX33021,21.9,54.3
+Texas District 34,Texas,TX,34,south,Vela,H2TX27190,60,Gonzalez,H6TX34031,40,Dem Hold,Vela,H2TX27190,60,Gonzalez,H6TX34031,40,20
+Texas District 35,Texas,TX,35,south,Doggett,H4TX10028,71.3,Smalling,H8TX35026,26,Dem Hold,Doggett,H4TX10028,71.3,Smalling,H8TX35026,26,45.3
+Texas District 36,Texas,TX,36,south,Steele,H8TX36024,27.4,Babin,H6TX02079,72.6,GOP Hold,Babin,H6TX02079,72.6,Steele,H8TX36024,27.4,45.2
+Utah District 1,Utah,UT,1,west,Castillo,H8UT01158,24.9,Bishop,H2UT01094,61.6,GOP Hold,Bishop,H2UT01094,61.6,Castillo,H8UT01158,24.9,36.7
+Utah District 2,Utah,UT,2,west,Ghorbani,H8UT02255,38.9,Stewart,H2UT02324,56.1,GOP Hold,Stewart,H2UT02324,56.1,Ghorbani,H8UT02255,38.9,17.2
+Utah District 3,Utah,UT,3,west,Singer,H8UT03402,27.3,Curtis,H8UT03238,67.5,GOP Hold,Curtis,H8UT03238,67.5,Singer,H8UT03402,27.3,40.2
+Utah District 4,Utah,UT,4,west,McAdams,H8UT04053,50.1,Love,H2UT04023,49.9,Dem Pickup,McAdams,H8UT04053,50.1,Love,H2UT04023,49.9,0.2
+Vermont District 1,Vermont,VT,1,northeast,Welch,H6VT00160,69.2,Tynio,H8VT01065,26,Dem Hold,Welch,H6VT00160,69.2,Tynio,H8VT01065,26,43.2
+Virginia District 1,Virginia,VA,1,south,Williams,H8VA01303,44.8,Wittman,H8VA01147,55.2,GOP Hold,Wittman,H8VA01147,55.2,Williams,H8VA01303,44.8,10.4
+Virginia District 2,Virginia,VA,2,south,Luria,H8VA02111,51.1,Taylor,H0VA02118,48.9,Dem Pickup,Luria,H8VA02111,51.1,Taylor,H0VA02118,48.9,2.2
+Virginia District 3,Virginia,VA,3,south,Scott,H6VA01117,0,NA,NA,NA,Dem Hold,Scott,H6VA01117,0,NA,NA,8.8,-8.8
+Virginia District 4,Virginia,VA,4,south,McEachin,H6VA04061,62.6,McAdams,H8VA04026,36,Dem Hold,McEachin,H6VA04061,62.6,McAdams,H8VA04026,36,26.6
+Virginia District 5,Virginia,VA,5,south,Cockburn,H8VA05155,46.7,Riggleman,H8VA05171,53.3,GOP Hold,Riggleman,H8VA05171,53.3,Cockburn,H8VA05155,46.7,6.6
+Virginia District 6,Virginia,VA,6,south,Lewis,H8VA06195,40.2,Cline,H8VA06104,59.8,GOP Hold,Cline,H8VA06104,59.8,Lewis,H8VA06195,40.2,19.6
+Virginia District 7,Virginia,VA,7,south,Spanberger,H8VA07094,50.4,Brat,H4VA07143,48.4,Dem Pickup,Spanberger,H8VA07094,50.4,Brat,H4VA07143,48.4,2
+Virginia District 8,Virginia,VA,8,south,Beyer,H4VA08224,76.3,Oh,H8VA08159,23.7,Dem Hold,Beyer,H4VA08224,76.3,Oh,H8VA08159,23.7,52.6
+Virginia District 9,Virginia,VA,9,south,Flaccavento,H8VA09066,34.8,Griffith,H0VA09055,65.2,GOP Hold,Griffith,H0VA09055,65.2,Flaccavento,H8VA09066,34.8,30.4
+Virginia District 10,Virginia,VA,10,south,Wexton,H8VA10106,56.2,Comstock,H4VA10089,43.8,Dem Pickup,Wexton,H8VA10106,56.2,Comstock,H4VA10089,43.8,12.4
+Virginia District 11,Virginia,VA,11,south,Connolly,H8VA11062,71.2,Dove,H8VA11070,27,Dem Hold,Connolly,H8VA11062,71.2,Dove,H8VA11070,27,44.2
+Washington District 1,Washington,WA,1,west,DelBene,H0WA08046,59.3,Beeler,H8WA01077,40.7,Dem Hold,DelBene,H0WA08046,59.3,Beeler,H8WA01077,40.7,18.6
+Washington District 2,Washington,WA,2,west,Larsen,H0WA02080,71.3,NA,NA,NA,Dem Hold,Larsen,H0WA02080,71.3,Luke,H6WA02186,28.7,71.3
+Washington District 3,Washington,WA,3,west,Long,H8WA03198,47.3,Herrera Beutler,H0WA03187,52.7,GOP Hold,Herrera Beutler,H0WA03187,52.7,Long,H8WA03198,47.3,5.4
+Washington District 4,Washington,WA,4,west,Brown,H8WA04089,37.2,Newhouse,H4WA04104,62.8,GOP Hold,Newhouse,H4WA04104,62.8,Brown,H8WA04089,37.2,25.6
+Washington District 5,Washington,WA,5,west,Brown,H8WA05193,45.2,McMorris Rodgers,H4WA05077,54.8,GOP Hold,McMorris Rodgers,H4WA05077,54.8,Brown,H8WA05193,45.2,9.6
+Washington District 6,Washington,WA,6,west,Kilmer,H2WA06129,63.9,Dightman,H8WA06100,36.1,Dem Hold,Kilmer,H2WA06129,63.9,Dightman,H8WA06100,36.1,27.8
+Washington District 7,Washington,WA,7,west,Jayapal,H6WA07458,83.6,Keller,H4WA07073,16.4,Dem Hold,Jayapal,H6WA07458,83.6,Keller,H4WA07073,16.4,67.2
+Washington District 8,Washington,WA,8,west,Schrier,H8WA08189,52.4,Rossi,H8WA08205,47.6,Dem Pickup,Schrier,H8WA08189,52.4,Rossi,H8WA08205,47.6,4.8
+Washington District 9,Washington,WA,9,west,Smith,H6WA09025,67.9,NA,NA,NA,Dem Hold,Smith,H6WA09025,67.9,Smith,H8WA09054,32.1,67.9
+Washington District 10,Washington,WA,10,west,Heck,H0WA03161,61.5,Brumbles,H8WA10045,38.5,Dem Hold,Heck,H0WA03161,61.5,Brumbles,H8WA10045,38.5,23
+West Virginia District 1,West Virginia,WV,1,south,Fershee,H8WV01075,35.4,McKinley,H0WV01072,64.6,GOP Hold,McKinley,H0WV01072,64.6,Fershee,H8WV01075,35.4,29.2
+West Virginia District 2,West Virginia,WV,2,south,Sergent,H8WV02115,42.9,Mooney,H4WV02080,54,GOP Hold,Mooney,H4WV02080,54,Sergent,H8WV02115,42.9,11.1
+West Virginia District 3,West Virginia,WV,3,south,Ojeda,H8WV03048,43.6,Miller,H8WV03097,56.4,GOP Hold,Miller,H8WV03097,56.4,Ojeda,H8WV03048,43.6,12.8
+Wisconsin District 1,Wisconsin,WI,1,midwest,Bryce,H8WI01123,42.3,Steil,H8WI01156,54.6,GOP Hold,Steil,H8WI01156,54.6,Bryce,H8WI01123,42.3,12.3
+Wisconsin District 2,Wisconsin,WI,2,midwest,Pocan,H2WI02124,0,NA,NA,NA,Dem Hold,Pocan,H2WI02124,100,NA,NA,0,100
+Wisconsin District 3,Wisconsin,WI,3,midwest,Kind,H6WI03099,59.7,Toft,H8WI03103,40.3,Dem Hold,Kind,H6WI03099,59.7,Toft,H8WI03103,40.3,19.4
+Wisconsin District 4,Wisconsin,WI,4,midwest,Moore,H4WI04183,75.7,Rogers,H8WI04069,21.7,Dem Hold,Moore,H4WI04183,75.7,Rogers,H8WI04069,21.7,54
+Wisconsin District 5,Wisconsin,WI,5,midwest,Palzewicz,H8WI05165,38,Sensenbrenner,H8WI09050,62,GOP Hold,Sensenbrenner,H8WI09050,62,Palzewicz,H8WI05165,38,24
+Wisconsin District 6,Wisconsin,WI,6,midwest,Kohl,H8WI06098,44.5,Grothman,H4WI06048,55.5,GOP Hold,Grothman,H4WI06048,55.5,Kohl,H8WI06098,44.5,11
+Wisconsin District 7,Wisconsin,WI,7,midwest,Engebretson,H8WI07096,38.5,Duffy,H0WI07051,60.1,GOP Hold,Duffy,H0WI07051,60.1,Engebretson,H8WI07096,38.5,21.6
+Wisconsin District 8,Wisconsin,WI,8,midwest,Liegeois,H8WI08045,36.3,Gallagher,H6WI08155,63.7,GOP Hold,Gallagher,H6WI08155,63.7,Liegeois,H8WI08045,36.3,27.4
+Wyoming District 1,Wyoming,WY,1,west,Hunter,H8WY01062,29.8,Cheney,H6WY00159,63.7,GOP Hold,Cheney,H6WY00159,63.7,Hunter,H8WY01062,29.8,33.9
