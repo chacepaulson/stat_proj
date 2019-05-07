@@ -1,0 +1,754 @@
+---
+title: "Money in Politics: A Brief Analysis of the 2018 Midterms"
+author: "Chace Paulson"
+date: "4/30/2019"
+output: pdf_document
+---
+
+```{r importData, include = FALSE}
+# import data 
+library(readr)
+winner_calc <- read_csv("~/Desktop/stat_proj/coded_data/winner_calc2.csv", col_types = cols(X1 = col_skip()))
+loser_calc <- read_csv("~/Desktop/stat_proj/coded_data/loser_calc2.csv", 
+                        col_types = cols(X1 = col_skip()))
+
+# recategorize variables to ensure numeric
+winner_calc$delta <- as.double(winner_calc$delta)
+loser_calc$delta <- as.double(loser_calc$delta)
+
+# load packages
+library(tidyverse)
+library(reshape2)
+library(ggplot2)
+library(dplyr)
+library(usmap)
+library(knitr)
+library(xtable)
+```
+
+```{r subsetData, include = FALSE}
+# Subset Data
+
+# by political party 
+unique(winner_calc$party)
+winner_rep <- subset(winner_calc, party == "REP")
+winner_dem <- subset(winner_calc, party == "DEM")
+
+loser_rep <- subset(loser_calc, party == "REP")
+loser_dem <- subset(loser_calc, party == "DEM")
+
+# by region
+unique(winner_calc$region)
+winner_south <- subset(winner_calc, region == "south")
+winner_west <- subset(winner_calc, region == "west")
+winner_midwest <- subset(winner_calc, region == "midwest")
+winner_northeast <- subset(winner_calc, region == "northeast")
+
+loser_south <- subset(loser_calc, region == "south")
+loser_west <- subset(loser_calc, region == "west")
+loser_midwest <- subset(loser_calc, region == "midwest")
+loser_northeast <- subset(loser_calc, region == "northeast")
+
+# by hold flip status
+unique(winner_calc$hold_flip)
+winner_dem_pickup <- subset(winner_calc, hold_flip == "Dem Pickup")
+winner_dem_hold <- subset(winner_calc, hold_flip == "Dem Hold")
+winner_gop_pickup <- subset(winner_calc, hold_flip == "GOP Pickup")
+winner_gop_hold <- subset(winner_calc, hold_flip == "GOP Hold")
+
+loser_dem_pickup <- subset(loser_calc, hold_flip == "Dem Pickup")
+loser_dem_hold <- subset(loser_calc, hold_flip == "Dem Hold")
+loser_gop_pickup <- subset(loser_calc, hold_flip == "GOP Pickup")
+loser_gop_hold <- subset(loser_calc, hold_flip == "GOP Hold")
+```
+
+```{r calcMeans, include = FALSE}
+# Calculating Means 
+
+# A. mean spending total 
+
+mean_spending_total <- data.frame(winner = mean(winner_calc$total, na.rm = TRUE),
+                                  loser = mean(loser_calc$total, na.rm = TRUE))
+
+
+# B. mean spending party
+
+mean_spending_party <- data.frame(party = c("DEM", "REP"),
+                                  winner = c(mean(winner_dem$total, na.rm = TRUE),
+                                             mean(winner_rep$total, na.rm = TRUE)),
+                                  loser = c(mean(loser_dem$total, na.rm = TRUE),
+                                            mean(loser_rep$total, na.rm = TRUE)))
+
+# C. mean spending hold flip 
+
+mean_spending_hold_flip <- data.frame(hold_flip = c("dem_pickup", "dem_hold", "gop_pickup", "gop_hold"),
+                                   winner = c(mean(winner_dem_pickup$total, na.rm = TRUE),
+                                              mean(winner_dem_hold$total, na.rm = TRUE),
+                                              mean(winner_gop_pickup$total, na.rm = TRUE),
+                                              mean(winner_gop_hold$total, na.rm = TRUE)),
+                                   loser = c(mean(loser_dem_pickup$total, na.rm = TRUE),
+                                             mean(loser_dem_hold$total, na.rm = TRUE),
+                                             mean(loser_gop_pickup$total, na.rm = TRUE),
+                                             mean(loser_gop_hold$total, na.rm = TRUE)))
+
+# D. mean spending region 
+
+mean_spending_region <- data.frame(region = c("south", "west", "midwest", "northeast"),
+                                  winner = c(mean(winner_south$total, na.rm = TRUE),
+                                             mean(winner_west$total, na.rm = TRUE),
+                                             mean(winner_midwest$total, na.rm = TRUE),
+                                             mean(winner_northeast$total, na.rm = TRUE)),
+                                  loser = c(mean(loser_south$total, na.rm = TRUE),
+                                             mean(loser_west$total, na.rm = TRUE),
+                                             mean(loser_midwest$total, na.rm = TRUE),
+                                             mean(loser_northeast$total, na.rm = TRUE)))
+
+# F. mean spending percent 
+
+colnames(winner_calc)
+mean_spending_per <- data.frame(category = c("advertise", "poll", 
+                                                    "research", "consulting",
+                                                    "fundraise", "pay", 
+                                                    "materials", "travel",
+                                                    "event", "mail", 
+                                                    "radio", "television", 
+                                                    "newspaper", "smedia", 
+                                                    "website"), 
+                                       winner_mean = c(mean(winner_calc$per_advertise, na.rm = TRUE),
+                                                mean(winner_calc$per_poll, na.rm = TRUE),
+                                                mean(winner_calc$per_research, na.rm = TRUE),
+                                                mean(winner_calc$per_consulting, na.rm = TRUE),
+                                                mean(winner_calc$per_fundraise, na.rm = TRUE),
+                                                mean(winner_calc$per_pay, na.rm = TRUE),
+                                                mean(winner_calc$per_materials, na.rm = TRUE),
+                                                mean(winner_calc$per_travel, na.rm = TRUE),
+                                                mean(winner_calc$per_event, na.rm = TRUE),
+                                                mean(winner_calc$per_mail, na.rm = TRUE),
+                                                mean(winner_calc$per_radio, na.rm = TRUE),
+                                                mean(winner_calc$per_television, na.rm = TRUE),
+                                                mean(winner_calc$per_newspaper, na.rm = TRUE),
+                                                mean(winner_calc$per_smedia, na.rm = TRUE),
+                                                mean(winner_calc$per_website, na.rm = TRUE)),
+                                loser_mean = c(mean(loser_calc$per_advertise, na.rm = TRUE),
+                                                mean(loser_calc$per_poll, na.rm = TRUE),
+                                                mean(loser_calc$per_research, na.rm = TRUE),
+                                                mean(loser_calc$per_consulting, na.rm = TRUE),
+                                                mean(loser_calc$per_fundraise, na.rm = TRUE),
+                                                mean(loser_calc$per_pay, na.rm = TRUE),
+                                                mean(loser_calc$per_materials, na.rm = TRUE),
+                                                mean(loser_calc$per_travel, na.rm = TRUE),
+                                                mean(loser_calc$per_event, na.rm = TRUE),
+                                                mean(loser_calc$per_mail, na.rm = TRUE),
+                                                mean(loser_calc$per_radio, na.rm = TRUE),
+                                                mean(loser_calc$per_television, na.rm = TRUE),
+                                                mean(loser_calc$per_newspaper, na.rm = TRUE),
+                                                mean(loser_calc$per_smedia, na.rm = TRUE),
+                                                mean(loser_calc$per_website, na.rm = TRUE)))
+
+# F. mean spending amount 
+
+colnames(winner_calc)
+mean_spending_amount <- data.frame(category = c("advertise", "poll", 
+                                             "research", "consulting",
+                                             "fundraise", "pay", 
+                                             "materials", "travel",
+                                             "event", "mail", 
+                                             "radio", "television", 
+                                             "newspaper", "smedia", 
+                                             "website"), 
+                                winner_mean = c(mean(winner_calc$advertise, na.rm = TRUE),
+                                                mean(winner_calc$poll, na.rm = TRUE),
+                                                mean(winner_calc$research, na.rm = TRUE),
+                                                mean(winner_calc$consulting, na.rm = TRUE),
+                                                mean(winner_calc$fundraise, na.rm = TRUE),
+                                                mean(winner_calc$pay, na.rm = TRUE),
+                                                mean(winner_calc$materials, na.rm = TRUE),
+                                                mean(winner_calc$travel, na.rm = TRUE),
+                                                mean(winner_calc$event, na.rm = TRUE),
+                                                mean(winner_calc$mail, na.rm = TRUE),
+                                                mean(winner_calc$radio, na.rm = TRUE),
+                                                mean(winner_calc$television, na.rm = TRUE),
+                                                mean(winner_calc$newspaper, na.rm = TRUE),
+                                                mean(winner_calc$smedia, na.rm = TRUE),
+                                                mean(winner_calc$website, na.rm = TRUE)),
+                                loser_mean = c(mean(loser_calc$advertise, na.rm = TRUE),
+                                               mean(loser_calc$poll, na.rm = TRUE),
+                                               mean(loser_calc$research, na.rm = TRUE),
+                                               mean(loser_calc$consulting, na.rm = TRUE),
+                                               mean(loser_calc$fundraise, na.rm = TRUE),
+                                               mean(loser_calc$pay, na.rm = TRUE),
+                                               mean(loser_calc$materials, na.rm = TRUE),
+                                               mean(loser_calc$travel, na.rm = TRUE),
+                                               mean(loser_calc$event, na.rm = TRUE),
+                                               mean(loser_calc$mail, na.rm = TRUE),
+                                               mean(loser_calc$radio, na.rm = TRUE),
+                                               mean(loser_calc$television, na.rm = TRUE),
+                                               mean(loser_calc$newspaper, na.rm = TRUE),
+                                               mean(loser_calc$smedia, na.rm = TRUE),
+                                               mean(loser_calc$website, na.rm = TRUE)))
+```
+
+# Abstract 
+The following paper will analyze the relationship between campaign spending and United States House of Representatives election results during the 2018 midterm election cycle, investigating the differences in disbursements by winning campaigns compared to losing campaigns. 
+
+# Background on the Data Set
+
+## Origins
+The research for the paper pulls on a series of different data sets from the Federal Elections Commission, including the disbursements set, the committees set, and the candidates set. Due to limitations within the disbursement data, the FEC interface was utilized in order to export data sets along categorical lines. While the FEC provides both a "Description" and a "Category" for each disbursement listed within the set, the information is listed by the campaign committee that files the report rather than the FEC. Thus, while the category column provides a succient 10 categories for spending types (such as advertising, polling, etc.), the majority of campaign committees coded their disbursement types under the "Other" category, leaving most campaigns with over 90 percent of their spending labeled as "Other". Due to this, an alternative method of analysis was required. Most of the types of spending analyzed within the paper were listed under the "Description" column in over 100 unique phrases. In order to avoid the difficulty of breaking down this information, use was made of the "Description" box provided for under the "Disbursement Details" tab. The following phrases were utilized to create the categories established in the final data set: "advertising"/"advertise", "polling"/"poll", "research", "fundraising"/"fundraise", "payroll"/"salary"/"pay", "materials", "consult", "event", "direct mail"/"mail"/"postage", "travel", "social media", "television"/"tv", "newspaper", and "website" (slashes indicate phrases that were combined to create one category). The only remaining filtering that occured on the FEC website was selecting "House"" as the office sought for both the candidates and committees data sets as well as narrowing the election year to 2018 on the candidates set. The data sets can be located and exported from the following addressed:
+
+*Disbursements*: https://www.fec.gov/data/disbursements/?data_type=processed&two_year_transaction_period=2018&min_date=01%2F01%2F2017&max_date=12%2F31%2F2018
+
+*Committees*: https://www.fec.gov/data/committees/
+
+*Candidates*: https://www.fec.gov/data/candidates/?has_raised_funds=true
+
+The last set that was required prior to tidying and merging was the actual election results from 2018. Due to a lack of similar data from FEC, this was instead pulled from Real Clear Politics (note: FEC does release election results but the report does not come out until two years post election). Well the data set provided by Real Clear Politics did include election results by district and candidate, it lacked the "candidate id" and "committe id" number utilized for more accurate binding in the FEC data sets. Without such information, binding had to occur along state and district lines which repeatedly turned back less than 100 candidates when over 800 were expected (435 winners, and roughly 400 general election competitors). Thus, manual work was done to attach the FEC candidate id to the results data in order to have a more successful merge later on. The results data set can be located and exported from the following addressed:
+
+*Results*: https://www.realclearpolitics.com/elections/live_results/2018/house/
+
+## Tidying and Merging
+The first step in tidying the data was to calculate the total spending for each campaign as well as the disbursement amount for each of the given categories previously established. In order to do so, a for loop was utilized, filtering through the data set to select on committee at a time, calculate the total, import the committee name and the number in to a data frame, and loop again to collect the information on the next committee. An example of the code is provided below: 
+
+```{r forLoopExample, eval=FALSE}
+for(i in df_list){
+  df1 <- subset(polling_drop, committee_id == i)
+  total <- sum(df1$dis_amount)
+  df2 <- data.frame("committee_id" = df1$committee_id[1], total)
+  calc_polling <- rbind(calc_polling, df2)
+}
+```
+
+After these calculations were pulled for the 15 categories as well as the total amount for each committee, the results were merged together in to one combined data frame. From there, the variable "committee_id", which lists a personalized identification number given to every campaign committee, was utilized to bind the calculations data frame to the committee data frame. While it would have been ideal to immeditely bind the calculations to the candidate set, the disbursement data on the FEC lists only a "committee id" and not a "candidate id" and the candidate set failed to include a committee id number. Thus, the committee data frame, which contained both, was used as a bridge between the two. The election results were then bond to this new data frame. Afterwards, the only remaining actions were to calculate the percentage of spending from the category totals and split the data in to two separate data sets - one for winning candidates and one for losing candidates. The resulting sets, after renaming some columns and disgarding others, was exported as a csv as the "winner_calc2" and "loser_calc2" sets (note: the sets will henceforth be referred to as winner_calc and loser_calc).
+
+## Overview of the Final Data Set
+
+The winner_calc data frame contains 435 observations, representing the 435 individuals who won their elections for the House of Representatives. The loser_calc data frame contains 343 observations, representing the 343 individals who lost their elections. The number of losing observations is markedly small as it counts only the major two party candidates and candidates who raised enough money to have FEC reports filed. Further, not every campaign faced a challenger in the general election.
+
+### Variables
+
+Both data sets contain 44 variables. A brief overview of these is provided below:
+
+*committee_name*: name of the campaign committee
+
+*committee_id*: FEC designated identification number for the campaign committee
+
+*candidate_name*: name of the candidate running 
+
+*party*: political of the candidate (coded as REP and DEM)
+
+*state*: abbreviation for the state in which the election occured
+
+*district*: district number within the state of the campaign (states with only an at-large representative are denoted with a 0 under district)
+
+*region*: region of the country of the campaign (west, midwest, northeast, south)
+
+*incumbent_challenge*: denotes whether the candidate was an incumbent, a challenger, or running for an open seat (coded as I, C, and O)
+
+*hold_flip*: denotes whether the party in power changed as a result of the election (coded as Dem Pickup, Rep Pickup, Dem Hold, Rep Hold)
+
+*win_per*: percentage of the vote the winner claimed
+
+*lose_per*: percentage of the vote the loser claimed
+
+*delta*: difference between the winning percentage and the losing 
+
+*total*: total amount of disbursements from the campaign 
+
+*advertise*: total amount spent on advertising by the campaign (contains disbursements that included the phrases advertise, advertising, newspaper, radio, television, and tv)
+
+*poll*: total amount spent on polling by the campaign (contains disbursements that included the phrases poll and polling)
+
+*research*: total amount spent on research by the campaign 
+
+*consulting*: total amount spent on consultants by the campaign (contains disbursements that included the phrases consult and consulting)
+
+*fundraise*: total amount spent on fundraising by the campaign (contains disbursements that included the phrases fundraise and fundraising)
+
+*pay*: total amount spent on employee pay (contains disbursements that included the phrases pay, payroll, and salary)
+
+*materials*: total amount spent on campaign materials by the campaign
+
+*travel*: total amount spent on traveling by the campaign
+
+*event*: total amount spent on events by the campaign
+
+*mail*: total amount spent on mail by the campaign (contains disbursements that included the phrases mail and postage)
+
+*radio*: total amount spent on radio advertisements by the campaign
+
+*television*: total amount spent on television advertisements by the campaign (contains disbursements that included the phrases tv and television)
+
+*newspaper*: total amount spent on newspaper advertisements by the campaign
+
+*smedia*:total amount spent on social media advertisements by the campaign
+
+*website*: total amount spent on website advertisements by the campaign
+
+The remaining 15 variables are the percentage of the total disbursement amount spent by the campaign on the individual categories listed above. The variables are denoted by per_CATEGORY, i.e. per_advertise. 
+
+### Example 
+
+An example of the data is provided below:
+
+```{r example}
+head(winner_calc)
+```
+
+# Total Spending 
+
+The first topic to consider while analyzing this data set is whether there is a difference between the total amount winning campaigns spent during the 2018 election cycle versus the amount losing campaigns spent. Would winning campaigns outspend losing campaigns, leading them to such a win? Or will losing campaigns disburse a similar amount of money in an attempt to close the gap and take the lead on election day?
+
+The following table (*Table 1*) contains the comparison in spending. As one can see, winning campaigns far outspend losing campaigns - spending on average $978,850 and 80 percent more money.
+
+```{r spendingTotalTable, echo=FALSE}
+kable(mean_spending_total, caption = "Total Amount Spent")
+```
+
+The following graph conveys similar information. The x axis details the outcome of the campaign - with the winning campaign in dark blue and the losing campaign in light blue. The y axis shows the mean spending level for the two campaign types (in thousands). As the visual representation makes even more clear, spending among winning campaign is consistly much higher than losing campaigns. 
+
+In order to evaluate whether the relationship between election outcome and total spending are statistically significant, a two sample t test was utilized. The resulting t test gave a p value of 3.98e-11. From this, the null hypothesis that there is not a statistically significant difference between election outcome and spending can be rejected. Thus, it has been established that there is, in fact, a statistically significant difference between the two. The results of the t test are included on the following page along with the bar graph comparing the two entities. 
+
+```{r spendingTotalPlot, echo=FALSE}
+# mean spending totals
+
+# reshape your data into long format
+mean_spending_total_divide <- mean_spending_total
+
+mean_spending_total_divide$winner <- 
+  mean_spending_total$winner / 1000
+mean_spending_total_divide$loser <- 
+  mean_spending_total$loser / 1000
+
+mean_spending_total_divide$total <- "total"
+
+meanlong5 <- melt(mean_spending_total_divide, id=c("total"))
+
+# make the plot total spending, campaign outcome
+ggplot(meanlong5) +
+  geom_bar(aes(x = total, y = value, fill = variable), 
+           stat="identity", position = "dodge", width = 0.7) +
+  scale_fill_manual("Result\n", values = c("dark blue","blue"), 
+                    labels = c("Winner", " Loser")) +
+  labs(x="\nCampaign Outcome",y="Total Spending (in thousands)\n",
+       title = "Total Spending by Campaign Outcome") +
+  theme(axis.text.x = element_text(face = "bold",size = 10))
+```
+
+```{r tTestTotalSpending, include = FALSE}
+# t test for campaign outcome and total spending 
+calc1 <- data.frame(campaign_outcome = 1:435, 
+                    total = winner_calc$total)
+calc2 <- data.frame(campaign_outcome = 1:343,
+                    total = loser_calc$total)
+calc1[,1] <- "win"
+calc2[,1] <- "lose"
+
+calc3 <- rbind(calc1, calc2)
+```
+
+Two sample t test for campaign outcome and campaign spending:
+
+```{r tTestTotalSpendingPrint, echo = FALSE}
+t.test(calc3$total[calc3$campaign_outcome=="win"],
+       calc3$total[calc3$campaign_outcome=="lose"])
+```
+
+# Spending Breakdown
+
+The next area for consideration is the way in which spending breakdowns across campaigns that win and those that lose. Under the current data set, there are fifteen different categories in which spending fall - advertising, polling, research, consulting, fundraising, employee pay, campaign materials, travel expenses, event expenses, direct mail, radio, television, newspaper, social media, and costs to set up and maintain a website. The objective of this section, then, is to see how spending in those 15 categories differs between campaigns that won and those that lost. 
+
+The first of the two tables compares the differences in total money spent. The first column lists the type of campaign disbursement, the second is how much winning campaigns spent on that category, and the third is how much losing campaigns spent on that category. Of interest within the table, winning campaigns spent the most amount of money on television - spend $777,120.877. This is compared to losing campaigns which only spent $443,089.842 - over 40 percent less. However, television is still the area that losing campaigns invested the most money in - just substantially less than winning campaigns. Newspapers and websites were the areas that both campaigns spent the least amount of money. In all, winning campaigns outspent losing campaigns in every single category.  
+
+```{r spendingTotalCategories1, echo = FALSE}
+kable(mean_spending_amount, caption = "Amount Spent by Category")
+```
+
+The second table shows the average percentage that a winning and a losing campaign put towards each of the fifteen categories. Note: this is not a mean of the total spending averages from the aforementioned chart - it is an average of all the winning and all the losing campaigns spending breakdown percentages which were established in the winner_calc and loser_calc data frames. There are several interesting takeaways from the spending percentages table. Winning campaigns spent the largest percentage of their total disbursements on television (19 percent) while losing campaigns spent the largest amount on advertising (19 percent). This is not too dramatic of a difference given the nature of the categories and how similar the campaigns were in spending on those - winning campaigns spent 16 percent on advertising and losing campaigns spent 18 percent on television. Some stark differences come in how the campaigns spend money on fundraising and employee pay. Winning campaigns spent 6 percent more on fundraising - which may help to explain why their campaigns were funded so much better than losing campaigns in the previous sections. Winning campaigns also spend 4 percent less on employee pay which may either mean that they are paying employees less or have a smaller staff. Either way, one of the cardinal rules of campaigning is that employees are expensive and only hire those that are absolutely necessary. This could mean that losing campaigns are biting off more than they can chew in the employee pay realm. 
+
+```{r spendingTotalCategories2, echo=FALSE}
+kable(mean_spending_per, caption = "Percentage Spent by Category")
+```
+
+Pie charts help to illustrate this point more effectively. Between the two charts, one is able to see that winning campaigns invest much more into fundraising, consulting, and television. Further, they waste much less money on employee pay and social media. Outside of these areas, though, winning and losing campaigns follow much of the same patterns in spending categories - investing larger amounts into categories like advertising and much less in to direct mail, events, research, etc. 
+
+```{r pieCharts, echo=FALSE}
+# create two pie charts with spending breakdowns 
+slices1 <- mean_spending_per$winner_mean
+lbls1 <- c("advertise", "poll", "research", "consulting", "fundraise", 
+          "pay", "materials", "travel", "event", "mail", "radio", 
+          "television", "newspaper", "smedia", "website")
+pie(slices1, labels = lbls1, main="Spending Breakdown, Winners",
+    radius = 1, cex = 0.6)
+
+slices2 <- mean_spending_per$loser_mean
+lbls2 <- c("advertise", "poll", "research", "consulting", "fundraise", 
+          "pay", "materials", "travel", "event", "mail", "radio", 
+          "television", "newspaper", "smedia", "website")
+pie(slices2, labels = lbls2, main="Spending Breakdown, Losers",
+    radius = 1, cex = 0.6)
+```
+
+The differences in spending are more directly compared on the following bar chart, putting the spending differences of winning and losing campaigns side by side. 
+
+```{r barSpendingCategories, echo = FALSE}
+# A. mean spending per chart 
+
+# reshape your data into long format
+meanlong <- melt(mean_spending_per, id=c("category"))
+
+# make the plot - spending breakdown, campaign outcome
+ggplot(meanlong) +
+  geom_bar(aes(x = category, y = value, fill = variable), 
+           stat="identity", position = "dodge", width = 0.7) +
+  scale_fill_manual("Result\n", values = c("dark blue","blue"), 
+                    labels = c("Winner", " Loser")) +
+  labs(x="\nSpending Category",y="Percentage of Total Spending\n",
+       title = "Spending Breakdown by Campaign Outcome") +
+  theme(axis.text.x = element_text(face = "bold",size = 4))
+```
+
+# Total Campaign Spending by Political Parties
+
+The next area to consider is whether or not there is a difference in spending between republicans and democrats. Does one party spend more than the other in general - regardless or if they are win or lose? Or is one party more successful, investing more money in to winning campaigns and less in to losing campaigns?
+
+The following table details the differences in spending between the two major political party candidates in the general election, showing both winning and losing campaigns. The Democratic Party massively outspent the Republican Party in both winning and losing campaigns - spending over 200 grand more on winning campaigns (11 percent more) and over 150 grand more on losing campaigns (14 percent more). This makes sense in the context of the 2018 political environment. The Republicans held control of both the US House and the US Senate going into the midterm elections; however, with a low approval rating for the president and his political party, the Democratic Party had strong grounds to gain seats in Congress. With the majority of the seats up for election in the US Senate already being Democratic held (26 of the 35 seats were Dem held), the US House looked to be much more of an appealing option to gain control. Thus, it makes sense how much money the Democratic Party poured in to the US House elections to try and take control. Further, Republicans likely spent more of their money in the US Senate races, knowing that that was the chamber they were most likely to retain if they played their cards right.
+
+```{r spendingTotalParty, echo=FALSE}
+kable(mean_spending_party, caption = "Total Spent by Party")
+```
+
+The following bar chart offer visualization to the previous table. One is able to see how much more money Democratic candidates spent in the 2018 midterm elections than their Republican counterparts. While one party did outspend the other, both parties did manage to invest more money in to winning campaigns than losing campaigns. A chi square test was used to analyze whether the election outcome (won or lost) and the political party are dependent on each other; however, with a p value of 0.6375, we are unable to reject the null hypothesis that the two are independent of each other. 
+
+```{r spendingParty, echo=FALSE}
+# C. mean spending party 
+
+# reshape your data into long format
+mean_spending_party_divide <- mean_spending_party
+
+mean_spending_party_divide$winner <- 
+  mean_spending_party$winner / 1000
+mean_spending_party_divide$loser <- 
+  mean_spending_party$loser / 1000
+
+meanlong3 <- melt(mean_spending_party_divide, id=c("party"))
+
+# make the plot total spending, campaign outcome
+ggplot(meanlong3) +
+  geom_bar(aes(x = party, y = value, fill = variable), 
+           stat="identity", position = "dodge", width = 0.7) +
+  scale_fill_manual("Result\n", values = c("dark blue","blue"), 
+                    labels = c("Winner", " Loser")) +
+  labs(x="\nPolitical Party",y="Total Spending (in thousands)\n",
+       title = "Total Spending by Party") +
+  theme(axis.text.x = element_text(face = "bold",size = 10))
+```
+
+The following output is from the chi square analysis run on political party and election outcome from the 2018 midterm elections: 
+
+```{r chiSquareParty, echo = FALSE}
+# chi square for party and outcome of campaign 
+calc_win <- data.frame(campaign_outcome = 1:435,
+                           party = winner_calc$party,
+                           total = winner_calc$total)
+calc_win[,1] <- "win"
+
+calc_lose <- data.frame(campaign_outcome = 1:343,
+                       party = loser_calc$party,
+                       total = loser_calc$total)
+calc_lose[,1] <- "lose"
+
+calc_outcome_party <- rbind(calc_win, calc_lose)
+
+calc_outcome_party_table <- table(calc_outcome_party$campaign_outcome,
+                                  calc_outcome_party$party)
+chsq=chisq.test(calc_outcome_party_table)
+chsq
+```
+
+Boxplots can offer further avenues to spot such differences in spending between the two parties. The following two boxplots show the total spending for winning and losing campaigns, broken down by political parties. The boxplots help to show how spending between the two parties is much more similar, with all four means falling around a similar area. However, Democrats averages may be return higher due to outliers. 
+
+```{r boxplotParty, echo = FALSE, fig.width = 3, fig.height = 2.25}
+# Party
+ggplot(winner_calc, aes(x=party, y=total)) + 
+  geom_boxplot() +
+  labs(title = "Winners",
+       x = "Party",
+       y = "Total Spending")
+
+ggplot(loser_calc, aes(x=party, y=total)) + 
+  geom_boxplot() +
+  labs(title = "Losers",
+       x = "Party",
+       y = "Total Spending")
+```
+
+# Election Outcomes by Party Control
+
+The analysis of political parties leads to the question of control over the US House seats after the election, i.e. how spending played in to the seats that were held and those that were flipped. A "flipped seat" denoates a seat that was previously held during one party during the last Congress and "flipped" to the opposite party during this election. A "held seat" is one where the current party maintained power between the two elections. Note: the "loser" in this section denotes the opposite party in that race (i.e., in a "dem_hold" seat, the dark blue line represents the democratic party who held the seat and the light blue is the republican party which lost in the election). The "hold flip" data follows much the same trend as the rest of the data - with winning campaigns outspending the losing campaigns - as can be seen in the following table. 
+
+```{r spendingTotalHoldFlip, echo=FALSE}
+kable(mean_spending_hold_flip, caption = "Total Spent by Outcome and Party Control")
+```
+
+The following bar chart highlights a few areas that are not as immediately clear in the table. First, seats that ended up bring picked up by Democrats were among the most expensive races in the country - on average, both parties poured more in to those elections than they did to any of the other three "outcome" types. Republican invested more in to campaigns that ended up being democratically held than they did to even those they would end up holding. Of further interest is that Republicans invested very little in to seats were Democrats would end up holding and Democrats invested very little in to elections that the GOP would up picking up. What is unclear is whether these monetary decisions were a result of an understanding in how the election may play out or whether the money invested into those races affected the outcomes. 
+
+```{r spendingHoldFlipPlot, echo=FALSE, fig.width = 7, fig.height = 4}
+# B. hold flip chart 
+
+# reshape your data into long format
+mean_spending_hold_flip_divide <- mean_spending_hold_flip
+
+mean_spending_hold_flip_divide$winner <- 
+  mean_spending_hold_flip$winner / 1000
+mean_spending_hold_flip_divide$loser <- 
+  mean_spending_hold_flip$loser / 1000
+
+meanlong2 <- melt(mean_spending_hold_flip_divide, id=c("hold_flip"))
+
+# make the plot total spending, campaign outcome
+ggplot(meanlong2) +
+  geom_bar(aes(x = hold_flip, y = value, fill = variable), 
+           stat="identity", position = "dodge", width = 0.7) +
+  scale_fill_manual("Result\n", values = c("dark blue","blue"), 
+                    labels = c("Winner", " Loser")) +
+  labs(x="\nElection Outcome",y="Total Spending (in thousands)\n",
+       title = "Total Spending by Campaign Outcome") +
+  theme(axis.text.x = element_text(face = "bold",size = 10))
+```
+
+As with the previous section, the analysis of boxplots offers an important addition to the previous tables and charts. While Democrats did outspend everything else on on "dem pickup" seats, it is much less of a difference than previously established. One massive outlier schewed the "dem pickup" elections. When accounted for, Democrats and Republicans spent much more similar amounts in this election type than previously thought. Accounting for outliers also revealed that Democrats spent much more in "GOP Hold" elections than the table or bar graph showed. 
+
+```{r boxplotHoldFlip, echo = FALSE, fig.width = 3.25, fig.height = 2.25}
+# Hold Flip 
+winner_calc %>% filter(is.na(hold_flip) == FALSE) %>% 
+  ggplot(aes(x=hold_flip, y=total)) + 
+  geom_boxplot() +
+  labs(title = "Winners",
+       x = "Outcome",
+       y = "Total Spending") + 
+  theme(axis.text.x = element_text(size=7))
+
+loser_calc %>% filter(is.na(hold_flip) == FALSE) %>% 
+  ggplot(aes(x=hold_flip, y=total)) +
+  geom_boxplot() +
+  labs(title = "Losers",
+       x = "Outcome",
+       y = "Total Spending")+ 
+  theme(axis.text.x = element_text(size=7))
+
+```
+
+The last thing to consider with election outcomes by party control is ANOVA - is there a statistically significant difference between the mean spending of the different election outcomes for winning campaigns? With a p value of <2e-16, we can safely reject the null hypothesis as there is a significant difference. The results of ANOVA for "hold flip" are shown below.
+
+```{r anovaHoldFlip, echo = FALSE}
+# hold flip 
+calc1 <- data.frame(region = winner_calc$hold_flip, 
+                    total = winner_calc$total)
+
+results <- aov(total~region, data=calc1)  
+summary(results)
+```
+
+# The Effects of Location 
+
+One of the last areas to consider in analyzing the what effects spending in the 2018 midterms is location. There are two different ways in which this topic can be analyzed - through regions (west, midwest, south, and east) and by state. The regions, as with the other sections, follow the pattern of winners substantially outspending losers. The West saw the largest average spent by winning candidates - $2,508,189 - while the South saw the lowest - $1,896,994. In terms of losing campaigns, the midwest saw the largest average spent - $1,562,931.7 - while the South saw the lowest - $984,677.4. This information is conveyed on the table below.
+
+```{r spendingTotalRegion, echo=FALSE}
+kable(mean_spending_region, caption = "Total Spent by Region")
+```
+
+A bar chart further illustrates this point. As one can see, the South consistly outspends the other three regions. Losing campaigns in the West spend less than half of what winning campaigns spend. The Midwest is the region in which spending between winning and losing campaigns is the closest. All three of these points make sense in the context of recent elections and political trend. Competitors in the West spend significantly less because it is a largely Democratic region and Republican competitors will spend less to compete in elections they already know they will lose. The same is true for the South, which is a securely Republican region. The West likely outspends the South, though, because of California, which recently shifted to a "jungle primary" system - which means that the two candidates who get the most votes on the primary ballot, regardless of party, will move on to the general election. This means that the general may consist of two Democrats, making the elections slightly more worth spending money on to the incumbent democrat in power. Lastly, the reason spending may be so close between winning and losing candidates in the Midwest may be the changing nature in the region. While many of the states were securely Democrat, 2016 and Trump shifted the region to more of a battleground - making it more appealing to both candidates to pour money in and attempt to win the seat. 
+
+```{r spendingRegionPlot, echo=FALSE, fig.width = 7, fig.height = 3.7}
+# mean spending region 
+
+# reshape your data into long format
+mean_spending_region_divide <- mean_spending_region
+
+mean_spending_region_divide$winner <- 
+  mean_spending_region$winner / 1000
+mean_spending_region_divide$loser <- 
+  mean_spending_region$loser / 1000
+
+meanlong4 <- melt(mean_spending_region_divide, id=c("region"))
+
+# make the plot total spending, campaign outcome
+ggplot(meanlong4) +
+  geom_bar(aes(x = region, y = value, fill = variable), 
+           stat="identity", position = "dodge", width = 0.7) +
+  scale_fill_manual("Result\n", values = c("dark blue","blue"), 
+                    labels = c("Winner", " Loser")) +
+  labs(x="\nRegion",y="Total Spending (in thousands)\n",
+       title = "Total Spending by Region") +
+  theme(axis.text.x = element_text(face = "bold",size = 10))
+```
+
+Boxplots help to narrow down any outliers that may be skewing the previous results. In terms of winners, all four regions see relatively similar spending levels on average, with outliers pushing the average in the West higher than the rest. Losing campaigns, on the other hand, see slightly more fluctation in the inner-quartile ranges. 
+
+```{r boxplotRegion, echo = FALSE, fig.width = 3.25, fig.height = 2.25}
+# Region
+ggplot(winner_calc, aes(x=region, y=total)) + 
+  geom_boxplot() +
+  labs(title = "Winners",
+       x = "Region",
+       y = "Total Spending") 
+
+ggplot(loser_calc, aes(x=region, y=total)) + 
+  geom_boxplot() +
+  labs(title = "Losers",
+       x = "Region",
+       y = "Total Spending")
+```
+
+The last thing to consider with election outcomes by region is ANOVA - is there a statistically significant difference between the mean spending between the regions for winning campaigns? With a p value of 0.0678, we cannot safely reject the null hypothesis to say that there is significant difference between the regions and spending. The results of ANOVA for region are shown below.
+
+```{r anovaRegion, echo = FALSE}
+# region
+calc1 <- data.frame(region = winner_calc$region, 
+                    total = winner_calc$total)
+
+results <- aov(total~region, data=calc1)  
+summary(results)
+```
+
+As previously mentioned, one of the other ways to analyze spending differences by location is on a state by state basis. In order to view these differences in a clear and concise manner, a mapping tool was utilized. States in a dark red denote those that have higher average spending among winning campaigns in their districts and lighter red denote those that have a lower average spending among winning campaigns in their districts. 
+
+The first map shows one clear outlier - Montana. Further analysis revealed that there was only data point for Montana (as it only has one at large house district). The candidate under question was Greg Gianforte. Spending levels for a candidate that managed a delta of around 5 percent (which means the race was not particularly competitive) in a relatively "non-interesting" state in politics (meaning that the races are not heavily watched and the state is not usally considered a battleground) would make little sense if it weren't for the fact that Gianforte is one of the wealthiest members of Congress currently. Due to this fact, it is likely that most of the spending from that campaign may have been his own. 
+Recoding the map to exclude Montana, we are better able to see the spectrum of spending in the remaining states. The states were candidates spent the most money outside of Montana were New Mexico, Iowa, Louisana, and Maine. States were candidates spent the least amount of money were Wyoming and Idaho. The low amount of spending in both Wyoming and Idaho make the excess spending in Montana even more apperent. While the state did have a competitive Senate race (between Rosendale and Tester) in 2018, the state usually follows spending patterns much more siliar to Wyoming and Idaho. 
+
+The two maps are included on the following page. 
+
+```{r mapWithMT, echo = FALSE}
+# with montana 
+
+# initialize 
+state_abrev <- unique(winner_calc$state)
+state_abrev <- sort(state_abrev)
+
+# calculate total spending by state 
+calc_state <- data.frame()
+
+for(i in state_abrev){
+  df1 <- subset(winner_calc, state == i)
+  mean <- mean(df1$total, na.rm = TRUE)
+  df2 <- data.frame("state" = df1$state[1], mean)
+  calc_state <- rbind(calc_state, df2)
+}
+
+# plot 
+plot_usmap(data = calc_state, values = "mean", lines = "red") + 
+  scale_fill_continuous(
+    low = "white", high = "red", name = "Total Spending", label = scales::comma
+  ) + theme(legend.position = "right") + 
+  labs(title = "Spending by State, with Montana")
+```
+
+```{r mapWithoutMT, echo = FALSE}
+# CREATE VERSION WITHOUT MONTANA
+
+# initialize 
+state_abrev <- as.data.frame(state_abrev)
+state_abrev <- state_abrev[!grepl("MT", state_abrev$state_abrev),]
+
+# calculate spending total 
+calc_state <- data.frame()
+
+for(i in state_abrev){
+  df1 <- subset(winner_calc, state == i)
+  mean <- mean(df1$total, na.rm = TRUE)
+  df2 <- data.frame("state" = df1$state[1], mean)
+  calc_state <- rbind(calc_state, df2)
+}
+
+# map 
+plot_usmap(data = calc_state, values = "mean", lines = "red") + 
+  scale_fill_continuous(
+    low = "white", high = "red", name = "Total Spending", label = scales::comma
+  ) + theme(legend.position = "right") + 
+  labs(title = "Spending by State, without Montana")
+```
+
+\pagebreak
+
+# Overall Election Outcome
+
+Lastly, one can consider the correlation between the previously mentioned 15 spending categories and delta. The following chart details the correlations between the two. Under the winner column, delta reflects the total percentage a candidate won by; while under the loser column, delta reflects the total percentage a candidate lost by. Thus, a positive correlation would be favorable for a winning campaign and a negative correlation would be favorable for a losing campaign. Two examples help to explain this logic - as spending increases in a winning campaign, you would want the delta to increase (i.e. if you are spending more, you would expect to win by a larger margin). For a losing campaign, if you spend more, you would hope that the delta was smaller (i.e. if you are spending more, you would expect to lose by a smaller margin). With this in mind, one can analyze the following table to see which areas have the strongest positive correlations to winning campaigns. These include fundraising (.4134) and materials (.2595). Categories that have the strongest negative correlation for losing campaigns are advertising (-.1917) and television (-.3256).
+
+```{r correlation, echo = FALSE}
+correlations_per <- data.frame(category = c("advertise", "poll", 
+                                               "research", "consulting",
+                                               "fundraise", "pay", 
+                                               "materials", "travel",
+                                               "event", "mail", 
+                                               "radio", "television", 
+                                               "newspaper", "smedia", 
+                                               "website"), 
+                           winner = c(cor(winner_calc$delta, winner_calc$per_advertise, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_poll, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_research, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_consulting, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_fundraise, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_pay, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_materials, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_travel, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_event, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_mail, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_radio, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_television, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_newspaper, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_smedia, use = "complete.obs"),
+                                     cor(winner_calc$delta, winner_calc$per_website, use = "complete.obs")),
+                           loser = c(cor(loser_calc$delta, loser_calc$per_advertise, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_poll, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_research, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_consulting, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_fundraise, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_pay, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_materials, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_travel, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_event, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_mail, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_radio, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_television, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_newspaper, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_smedia, use = "complete.obs"),
+                                     cor(loser_calc$delta, loser_calc$per_website, use = "complete.obs")))
+
+kable(correlations_per, caption = "Correlation between Category and Outcome")
+```
+
+However, this correlation analysis leaves an important fact out that explains why areas such as television, which one would expect to increase delta, actually has a strong negative correlation in winning campaigns (-.3890). That fact is that, in both winning and losing campaigns were the delta is the smallest, spending will be the highest as the race is more competitive. Winning campaigns in low delta elections will be higher spenders than winning campaigns in high delta elections. 
+
+The following scatterplots help to show this relationship between spending and delta. 
+
+```{r scatterPlot, echo=FALSE, warning=FALSE, message = FALSE}
+winner_divide <- data.frame(delta = winner_calc$delta, 
+                   total = winner_calc$total)
+loser_divide <- data.frame(delta = loser_calc$delta, 
+                            total = loser_calc$total)
+
+winner_divide$total_divide <- winner_calc$total / 1000
+loser_divide$total_divide <- loser_calc$total / 1000
+
+ggplot(winner_divide, aes(x = delta, y = total_divide)) + 
+  geom_point() + 
+  geom_smooth(method = lm, se = FALSE) +
+  ggtitle("Margin of Victory by Total Amount Spent") +
+  labs(y="Total Amount Spent (in thousands)", x = "Delta (in %)")
+
+ggplot(loser_divide, aes(x = delta, y = total_divide)) + 
+  geom_point() + 
+  geom_smooth(method = lm, se = FALSE) +
+  ggtitle("Margin of Defeat by Total Amount Spent") +
+  labs(y="Total Amount Spent (in thousands)", x = "Delta (in %)")
+```
+
+# Conlusion 
+
+The paper aimed to show that the relationship between money and politics is a more complicated picture than "spending more money makes you win". Other factors, such as region and political party, play roles in both spending and election outcome. Outside factors, such as the political environment and previous election cycles, also may factor to all of these areas. 
+
+## Limitations, Concerns, and Room for Further Research
+
+The aforementioned analysis focused solely on spending from the 2018 midterm elections in the US. For a more complete analysis, comparison would need to be made to other election cycles to see if the trends found on the previous pages are true for past elections or if they were new in 2018. Another place for further research is the effects of incumbency on both delta and spending levels. While this was included in the original data set, attempts to work with the column revealed one important fact - the incumbency status (or challenger, open seat status) within the FEC data sets were coded along 2020 lines rather than 2018. This means that the column was based of what the candidate would be in 2020 rather than what their status was in 2018. Given the crucial role that incumbency plays in elections - with incumbents winning at a much higher rate and raising/spending more money due to name recognition - this topic is crucial for further research. 
+
+
